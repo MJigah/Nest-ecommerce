@@ -6,6 +6,10 @@
   "name": "react",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "npm": "8.1.2",
+    "node": "16.13.1"
+  },
   "devDependencies": {
     "concurrently": "^7.5.0",
     "nodemon": "^2.0.20"
