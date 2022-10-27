@@ -1,0 +1,47 @@
+.no-border {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-action-right {
+  display: block;
+}
+
+.newsletter .newsletter-inner .newsletter-content form{
+  border-radius: 0;
+  max-width: 40%;
+  padding: 10px;
+  background: transparent;
+}
+
+.newsletter .newsletter-inner .newsletter-content form input{
+  background: none;
+  padding-left: 10px;
+  border-radius: 0;
+  width: 100%;
+  border: 1px solid #7e7e7eb2;
+}
+
+.newsletter .newsletter-inner .newsletter-content form button{
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-style-1.header-style-5 .header-bottom-bg-color {
+    background-color: #3bb77e !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header-style-1.header-style-5 .header-bottom-bg-color {
+    background-color: #fff !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .et,
+  .hotline,
+  li.hot-deals,
+  .header-action-2 .header-action-icon-2 span.lable {
+    display: block !important;
+  }
+}
