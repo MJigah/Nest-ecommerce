@@ -194,7 +194,7 @@ function Login() {
           <div className="container">
             <div className="header-wrap header-space-between position-relative">
               <div className="logo logo-width-1 d-block d-lg-none">
-                <Link to="index-2.html">
+                <Link to="/">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
@@ -214,7 +214,7 @@ function Login() {
         <div className="mobile-header-wrapper-inner">
           <div className="mobile-header-top">
             <div className="mobile-header-logo">
-              <Link to="index-2.html">
+              <Link to="/">
                 <img src="assets/imgs/theme/logo.svg" alt="logo" />
               </Link>
             </div>
@@ -239,25 +239,25 @@ function Login() {
               <nav>
                 <ul className="mobile-menu font-heading">
                   <li className="menu-item-has-children">
-                    <Link to="index-2.html">Home</Link>
+                    <Link to="/">Home</Link>
                     <ul className="dropdown">
                       <li>
-                        <Link to="index-2.html">Home 1</Link>
+                        <Link to="/">Home 1</Link>
                       </li>
                       <li>
-                        <Link to="index-3.html">Home 2</Link>
+                        <Link to="/">Home 2</Link>
                       </li>
                       <li>
-                        <Link to="index-4.html">Home 3</Link>
+                        <Link to="/">Home 3</Link>
                       </li>
                       <li>
-                        <Link to="index-5.html">Home 4</Link>
+                        <Link to="/">Home 4</Link>
                       </li>
                       <li>
                         <Link to="/">Home 5</Link>
                       </li>
                       <li>
-                        <Link to="index-7.html">Home 6</Link>
+                        <Link to="/">Home 6</Link>
                       </li>
                     </ul>
                   </li>
@@ -592,7 +592,7 @@ function Login() {
         <div className="page-header breadcrumb-wrap">
           <div className="container">
             <div className="breadcrumb">
-              <Link to="index-2.html" rel="nofollow">
+              <Link to="/" rel="nofollow">
                 <i className="fi-rs-home mr-5"></i>Home
               </Link>
               <span></span> Login
@@ -827,7 +827,7 @@ function Login() {
               <div className="col">
                 <div className="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0">
                   <div className="logo mb-30">
-                    <Link to="index-2.html" className="mb-15">
+                    <Link to="/" className="mb-15">
                       <img src="assets/imgs/theme/logo.svg" alt="logo" />
                     </Link>
                     <p className="font-lg text-heading">

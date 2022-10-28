@@ -1,3 +1,37 @@
+input[type="radio"] {
+  height: 30px;
+  width: 10%;
+  cursor: pointer;
+}
+
+.header-style-1 .header-middle-ptb-1,
+.page-header.breadcrumb-wrap {
+  padding-left: 30px;
+}
+
+.primary-sidebar .sidebar-widget,
+.banner-img {
+  margin-left: 30px;
+}
+
+.vendor-grid{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagination-area{
+  margin-left: 10px;
+}
+
+.newsletter, .section-padding, .footer-mid{
+  padding-left: .4%;
+  padding-right: .7%;
+}
+
+.flex-row-reverse{
+  padding-right: 10px;
+}
+
 .no-border {
   border-bottom: 1px solid #ececec;
 }
@@ -6,14 +40,14 @@
   display: block;
 }
 
-.newsletter .newsletter-inner .newsletter-content form{
+.newsletter .newsletter-inner .newsletter-content form {
   border-radius: 0;
   max-width: 40%;
   padding: 10px;
   background: transparent;
 }
 
-.newsletter .newsletter-inner .newsletter-content form input{
+.newsletter .newsletter-inner .newsletter-content form input {
   background: none;
   padding-left: 10px;
   border-radius: 0;
@@ -21,8 +55,33 @@
   border: 1px solid #7e7e7eb2;
 }
 
-.newsletter .newsletter-inner .newsletter-content form button{
+.newsletter .newsletter-inner .newsletter-content form button {
   width: 100%;
+}
+
+.product-card-bottom {
+  width: 100%;
+}
+
+.product-price {
+  width: 70%;
+}
+
+.add-cart {
+  width: 30%;
+}
+
+.widget-category-2 ul li {
+  justify-content: flex-start;
+}
+
+.widget-category-2 ul li input{
+  margin-right: 10px;
+}
+
+.product-cart-wrap .product-card-bottom .add-cart .add {
+  padding-top: 6px;
+  padding-left: 3px;
 }
 
 @media only screen and (max-width: 1024px) {

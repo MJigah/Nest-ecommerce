@@ -482,7 +482,7 @@ function Vendor() {
                         </ul>
                       </li>
                       <li>
-                        <Link to="shop-filter.html">Shop – Filter</Link>
+                        <Link to="#">Shop – Filter</Link>
                       </li>
                       <li>
                         <Link to="/">Shop – Wishlist</Link>
@@ -2619,54 +2619,59 @@ function Vendor() {
                 <h5 className="section-title style-1 mb-30">Category</h5>
                 <ul>
                   <li>
-                    <Link to="shop-grid-right.html">
-                      <img
+                    
+                      {/* <img
                         src="assets/imgs/theme/icons/category-1.svg"
                         alt=""
-                      />
-                      Milks & Dairies
-                    </Link>
-                    <span className="count">30</span>
+                      /> */}
+                      <input type="radio" value="Milks & Dairies" name="category" /> Milks & Dairies
+                      
+                    
+                    {/* <span className="count">30</span> */}
                   </li>
                   <li>
-                    <Link to="shop-grid-right.html">
-                      <img
+                    
+                      {/* <img
                         src="assets/imgs/theme/icons/category-2.svg"
                         alt=""
-                      />
-                      Clothing
-                    </Link>
-                    <span className="count">35</span>
+                      /> */}
+                      <input type="radio" value="Clothing" name="category" /> Clothing
+                      
+                    
+                    {/* <span className="count">35</span> */}
                   </li>
                   <li>
-                    <Link to="shop-grid-right.html">
-                      <img
+                    
+                      {/* <img
                         src="assets/imgs/theme/icons/category-3.svg"
                         alt=""
-                      />
-                      Pet Foods{" "}
-                    </Link>
-                    <span className="count">42</span>
+                      /> */}
+                      <input type="radio" value="Pet Foods" name="category" /> Pet Foods
+                      
+                    
+                    {/* <span className="count">42</span> */}
                   </li>
                   <li>
-                    <Link to="shop-grid-right.html">
-                      <img
+                    
+                      {/* <img
                         src="assets/imgs/theme/icons/category-4.svg"
                         alt=""
-                      />
-                      Baking material
-                    </Link>
-                    <span className="count">68</span>
+                      /> */}
+                      <input type="radio" value="Baking material" name="category" /> Baking material
+                      
+                    
+                    {/* <span className="count">68</span> */}
                   </li>
                   <li>
-                    <Link to="shop-grid-right.html">
-                      <img
+                    
+                      {/* <img
                         src="assets/imgs/theme/icons/category-5.svg"
                         alt=""
-                      />
-                      Fresh Fruit
-                    </Link>
-                    <span className="count">87</span>
+                      /> */}
+                      <input type="radio" value="Fresh Fruit" name="category" /> Fresh Fruit
+                      
+                    
+                    {/* <span className="count">87</span> */}
                   </li>
                 </ul>
               </div>
@@ -2743,7 +2748,7 @@ function Vendor() {
                   </div>
                 </div>
                 <Link
-                  to="shop-grid-right.html"
+                  to="#"
                   className="btn btn-sm btn-default"
                 >
                   <i className="fi-rs-filter mr-5"></i> Fillter
