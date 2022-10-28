@@ -356,7 +356,7 @@ function Vendor() {
                             </Link>
                           </li>
                           <li>
-                            <Link to="page-login.html">
+                            <Link to="/login">
                               <i className="fi fi-rs-sign-out mr-10"></i>Sign
                               out
                             </Link>
@@ -660,7 +660,7 @@ function Vendor() {
                         <Link to="/dashboard">My Account</Link>
                       </li>
                       <li>
-                        <Link to="page-login.html">Login</Link>
+                        <Link to="/login">Login</Link>
                       </li>
                       <li>
                         <Link to="page-register.html">Register</Link>
@@ -707,7 +707,7 @@ function Vendor() {
                 </Link>
               </div>
               <div className="single-mobile-header-info">
-                <Link to="page-login.html">
+                <Link to="/login">
                   <i className="fi-rs-user"></i>Log In / Sign Up
                 </Link>
               </div>

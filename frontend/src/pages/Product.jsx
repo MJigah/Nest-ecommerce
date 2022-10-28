@@ -555,7 +555,7 @@ function Product() {
                         <Link to="vendors-list.html">Vendors List</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-1.html">
+                        <Link to="/vendor">
                           Vendor Details 01
                         </Link>
                       </li>
@@ -809,7 +809,7 @@ function Product() {
                 <i className="fi-rs-home mr-5"></i>Home
               </Link>
               <span></span>{" "}
-              <Link to="vendor-details-1.html">[Vendor Name]</Link>
+              <Link to="/vendor">[Vendor Name]</Link>
               <span></span> [Product Name]
             </div>
           </div>

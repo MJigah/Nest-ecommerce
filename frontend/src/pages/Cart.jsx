@@ -41,7 +41,7 @@ function Cart() {
           <div className="container">
             <div className="header-wrap">
               <div className="logo logo-width-1 col-xl-7 col-lg-6">
-                <Link to="index-6.html">
+                <Link to="/">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
@@ -256,7 +256,7 @@ function Cart() {
                         <Link to="index-5.html">Home 4</Link>
                       </li>
                       <li>
-                        <Link to="index-6.html">Home 5</Link>
+                        <Link to="/">Home 5</Link>
                       </li>
                       <li>
                         <Link to="index-7.html">Home 6</Link>

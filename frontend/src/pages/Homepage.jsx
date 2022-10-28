@@ -242,7 +242,7 @@ function Homepage() {
             <div className="row">
               <div className="header-wrap">
                 <div className="logo logo-width-1 col-xl-9 col-lg-9">
-                  <Link to="index-2.html">
+                  <Link to="#">
                     <img src="assets/imgs/theme/logo.svg" alt="logo" />
                   </Link>
                 </div>
@@ -270,7 +270,7 @@ function Homepage() {
           <div className="container">
             <div className="header-wrap header-space-between position-relative">
               <div className="logo logo-width-1 d-block d-lg-none">
-                <Link to="index-2.html">
+                <Link to="#">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
@@ -289,7 +289,7 @@ function Homepage() {
         <div className="mobile-header-wrapper-inner">
           <div className="mobile-header-top">
             <div className="mobile-header-logo">
-              <Link to="index-2.html">
+              <Link to="#">
                 <img src="assets/imgs/theme/logo.svg" alt="logo" />
               </Link>
             </div>
@@ -426,8 +426,8 @@ function Homepage() {
                   </div>
                   <figure className="text-center single-thumbnail">
                     <img
-                      style={{height: "200px"}}
-                      src="assets/imgs/shop/product-14-2.jpg"
+                      style={{height: "100%", width: "100%", paddingTop: "60px", margin:"50px"}}
+                      src={"./assets/imgs/banner/home.png"}
                       alt=""
                     />
                   </figure>
@@ -493,7 +493,7 @@ function Homepage() {
                   data-wow-delay="0"
                 >
                   <div className="logo mb-30">
-                    <Link to="index-2.html" className="mb-15">
+                    <Link to="#" className="mb-15">
                       <img src="assets/imgs/theme/logo.svg" alt="logo" />
                     </Link>
                     <p className="font-lg text-heading">

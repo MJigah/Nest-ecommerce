@@ -141,29 +141,29 @@ function Dashboard() {
                       <div className="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                         <ul>
                           <li>
-                            <Link to="/">
+                            <Link to="#">
                               <i className="fi fi-rs-user mr-10"></i>My Account
                             </Link>
                           </li>
                           <li>
-                            <Link to="/">
+                            <Link to="#">
                               <i className="fi fi-rs-location-alt mr-10"></i>
                               Order Tracking
                             </Link>
                           </li>
                           <li>
-                            <Link to="/">
+                            <Link to="#">
                               <i className="fi fi-rs-label mr-10"></i>My Voucher
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-wishlist.html">
+                            <Link to="#">
                               <i className="fi fi-rs-heart mr-10"></i>My
                               Wishlist
                             </Link>
                           </li>
                           <li>
-                            <Link to="/">
+                            <Link to="#">
                               <i className="fi fi-rs-settings-sliders mr-10"></i>
                               Setting
                             </Link>
@@ -318,7 +318,7 @@ function Dashboard() {
                         <Link to="shop-filter.html">Shop – Filter</Link>
                       </li>
                       <li>
-                        <Link to="shop-wishlist.html">Shop – Wishlist</Link>
+                        <Link to="#">Shop – Wishlist</Link>
                       </li>
                       <li>
                         <Link to="/cart">Shop – Cart</Link>
