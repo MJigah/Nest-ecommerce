@@ -5,7 +5,7 @@ import { appendScript } from "../utils/appendScript";
 function Homepage() {
   useEffect(() => {
     appendScript("../assets/js/main8c94.js");
-  }, [])
+  }, []);
   return (
     <>
       <div
@@ -127,14 +127,20 @@ function Homepage() {
                   <div className="detail-info pr-30 pl-30">
                     <span className="stock-status out-stock"> Sale Off </span>
                     <h3 className="title-detail">
-                      <Link to="shop-product-right.html" className="text-heading">
+                      <Link
+                        to="shop-product-right.html"
+                        className="text-heading"
+                      >
                         Seeds of Change Organic Quinoa, Brown
                       </Link>
                     </h3>
                     <div className="product-detail-rating">
                       <div className="product-rate-cover text-end">
                         <div className="product-rate d-inline-block">
-                          <div className="product-rating" style={{width: "90%"}}></div>
+                          <div
+                            className="product-rating"
+                            style={{ width: "90%" }}
+                          ></div>
                         </div>
                         <span className="font-small ml-5 text-muted">
                           (32 reviews)
@@ -163,7 +169,10 @@ function Homepage() {
                         </Link>
                       </div>
                       <div className="product-extra-link2">
-                        <button type="submit" className="button button-add-to-cart">
+                        <button
+                          type="submit"
+                          className="button button-add-to-cart"
+                        >
                           <i className="fi-rs-shopping-cart"></i>Add to cart
                         </button>
                       </div>
@@ -189,7 +198,7 @@ function Homepage() {
       <header className="header-area header-style-1 header-style-5 header-height-2">
         <div
           className="header-top header-top-ptb-1 d-none d-lg-block header-bottom-bg-color"
-          style={{color: "#fff", padding: "18px"}}
+          style={{ color: "#fff", padding: "18px" }}
         >
           <div className="container">
             <div className="row align-items-center">
@@ -197,12 +206,12 @@ function Homepage() {
                 <div className="header-info">
                   <ul>
                     <li>
-                      <Link to="/" style={{color: "#fff"}}>
+                      <Link to="/" style={{ color: "#fff" }}>
                         Home
                       </Link>
                     </li>
                     <li>
-                      <Link to="/vendor" style={{color: "#fff"}}>
+                      <Link to="/vendor" style={{ color: "#fff" }}>
                         About Us
                       </Link>
                     </li>
@@ -222,12 +231,12 @@ function Homepage() {
                 <div className="header-info header-info-right">
                   <ul>
                     <li>
-                      <Link to="/vendors" style={{color: "#fff"}}>
+                      <Link to="/vendors" style={{ color: "#fff" }}>
                         Partners
                       </Link>
                     </li>
                     <li>
-                      <Link to="/vendors" style={{color: "#fff"}}>
+                      <Link to="/vendors" style={{ color: "#fff" }}>
                         Help
                       </Link>
                     </li>
@@ -401,8 +410,10 @@ function Homepage() {
                   <div className="single-header style-2">
                     <div className="row">
                       <div className="col-xl-10 col-lg-12 m-auto">
-                        <h2 className="mb-10 text-center">Shop Easy, Shop Quick</h2>
-                        <p className="mb-10 mt-45">
+                        <h2 className="mb-10 text-center">
+                          Shop Easy, Shop Quick
+                        </h2>
+                        <p className="mb-10 mt-45" style={{fontSize: "25px", fontWeight: "bold"}}>
                           <img
                             className="mr-10"
                             src="assets/imgs/theme/icons/icon-location.svg"
@@ -426,7 +437,12 @@ function Homepage() {
                   </div>
                   <figure className="text-center single-thumbnail">
                     <img
-                      style={{height: "100%", width: "100%", paddingTop: "60px", margin:"50px"}}
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                        paddingTop: "60px",
+                        margin: "50px",
+                      }}
                       src={"./assets/imgs/banner/home.png"}
                       alt=""
                     />
@@ -438,42 +454,23 @@ function Homepage() {
         </div>
       </main>
       <footer className="main">
-        <section className="newsletter mb-15 wow animate__animated animate__fadeIn">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="position-relative newsletter-inner">
-                  <div className="newsletter-content">
-                    <h2 className="mb-20">
-                      Stay home &amp; get your daily <br />
+        <section class="newsletter mb-15 wow animate__animated animate__fadeIn">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="position-relative newsletter-inner">
+                  <div class="newsletter-content">
+                    <h2 class="mb-20">
+                      Stay home & get your daily <br />
                       needs from our shop
                     </h2>
-                    <form method="post">
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          required=""
-                          name="firstname"
-                          placeholder="Firstname"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          required=""
-                          name="lastname"
-                          placeholder="Lastname"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <input
-                          required=""
-                          type="email"
-                          name="email"
-                          placeholder="Enter your Email"
-                        />
-                      </div>
-                      <button className="btn" type="submit">
+                    <p class="mb-45">
+                      Start You'r Daily Shopping with{" "}
+                      <span class="text-brand">Nest Mart</span>
+                    </p>
+                    <form class="form-subcriber d-flex">
+                      <input type="email" placeholder="Your emaill address" />
+                      <button class="btn" type="submit">
                         Subscribe
                       </button>
                     </form>
@@ -484,7 +481,7 @@ function Homepage() {
             </div>
           </div>
         </section>
-        <section className="section-padding footer-mid">
+        <section className="section-padding footer-mid" style={{textAlign: "center"}}>
           <div className="container pt-15 pb-20">
             <div className="row">
               <div className="col">
@@ -496,12 +493,9 @@ function Homepage() {
                     <Link to="#" className="mb-15">
                       <img src="assets/imgs/theme/logo.svg" alt="logo" />
                     </Link>
-                    <p className="font-lg text-heading">
-                      Awesome grocery store website template
-                    </p>
                   </div>
                   <ul className="contact-infor">
-                    <li>
+                    {/* <li>
                       <img
                         src="assets/imgs/theme/icons/icon-location.svg"
                         alt=""
@@ -511,15 +505,15 @@ function Homepage() {
                         5171 W Campbell Ave undefined Kent, Utah 53127
                         UnitedStates
                       </span>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <img
                         src="assets/imgs/theme/icons/icon-contact.svg"
                         alt=""
                       />
                       <strong>Call Us:</strong>
                       <span>(+91) - 540-025-124553</span>
-                    </li>
+                    </li> */}
                     <li>
                       <img
                         src="assets/imgs/theme/icons/icon-email-2.svg"
@@ -576,7 +570,7 @@ function Homepage() {
                   </li>
                 </ul>
               </div>
-              <div
+              {/* <div
                 className="footer-link-widget col wow animate__animated animate__fadeInUp"
                 data-wow-delay=".2s"
               >
@@ -604,7 +598,7 @@ function Homepage() {
                     <Link to="#">Compare products</Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div
                 className="footer-link-widget col wow animate__animated animate__fadeInUp"
                 data-wow-delay=".3s"
@@ -634,7 +628,7 @@ function Homepage() {
                   </li>
                 </ul>
               </div>
-              <div
+              {/* <div
                 className="footer-link-widget col wow animate__animated animate__fadeInUp"
                 data-wow-delay=".4s"
               >
@@ -662,7 +656,7 @@ function Homepage() {
                     <Link to="#">Cheese</Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div
                 className="footer-link-widget widget-install-app col wow animate__animated animate__fadeInUp"
                 data-wow-delay=".5s"
@@ -760,7 +754,9 @@ function Homepage() {
                   />
                 </Link>
               </div>
-              <p className="font-sm">Up to 15% discount on your first subscribe</p>
+              <p className="font-sm">
+                Up to 15% discount on your first subscribe
+              </p>
             </div>
           </div>
         </div>

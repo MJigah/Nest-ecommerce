@@ -5,7 +5,7 @@ import { appendScript } from "../utils/appendScript";
 function Vendor() {
   useEffect(() => {
     appendScript("../assets/js/main8c94.js");
-  }, [])
+  }, []);
   return (
     <>
       <div
@@ -127,10 +127,7 @@ function Vendor() {
                   <div className="detail-info pr-30 pl-30">
                     <span className="stock-status out-stock"> Sale Off </span>
                     <h3 className="title-detail">
-                      <Link
-                        to="/product"
-                        className="text-heading"
-                      >
+                      <Link to="/product" className="text-heading">
                         Seeds of Change Organic Quinoa, Brown
                       </Link>
                     </h3>
@@ -259,9 +256,7 @@ function Vendor() {
                             </div>
                             <div className="shopping-cart-title">
                               <h4>
-                                <Link to="/product">
-                                  Daisy Casual Bag
-                                </Link>
+                                <Link to="/product">Daisy Casual Bag</Link>
                               </h4>
                               <h4>
                                 <span>1 × </span>$800.00
@@ -284,9 +279,7 @@ function Vendor() {
                             </div>
                             <div className="shopping-cart-title">
                               <h4>
-                                <Link to="/product">
-                                  Corduroy Shirts
-                                </Link>
+                                <Link to="/product">Corduroy Shirts</Link>
                               </h4>
                               <h4>
                                 <span>1 × </span>$3200.00
@@ -460,9 +453,7 @@ function Vendor() {
                         <Link to="#">Single Product</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/product">
-                              Product – Right Sidebar
-                            </Link>
+                            <Link to="/product">Product – Right Sidebar</Link>
                           </li>
                           <li>
                             <Link to="shop-product-left.html">
@@ -531,10 +522,14 @@ function Vendor() {
                         <Link to="vendors-list.html">Vendors List</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-1.html">Vendor Details 01</Link>
+                        <Link to="vendor-details-1.html">
+                          Vendor Details 01
+                        </Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-2.html">Vendor Details 02</Link>
+                        <Link to="vendor-details-2.html">
+                          Vendor Details 02
+                        </Link>
                       </li>
                       <li>
                         <Link to="vendor-dashboard.html">Vendor Dashboard</Link>
@@ -554,14 +549,10 @@ function Vendor() {
                             <Link to="/product">Dresses</Link>
                           </li>
                           <li>
-                            <Link to="/product">
-                              Blouses & Shirts
-                            </Link>
+                            <Link to="/product">Blouses & Shirts</Link>
                           </li>
                           <li>
-                            <Link to="/product">
-                              Hoodies & Sweatshirts
-                            </Link>
+                            <Link to="/product">Hoodies & Sweatshirts</Link>
                           </li>
                           <li>
                             <Link to="/product">Women's Sets</Link>
@@ -575,14 +566,10 @@ function Vendor() {
                             <Link to="/product">Jackets</Link>
                           </li>
                           <li>
-                            <Link to="/product">
-                              Casual Faux Leather
-                            </Link>
+                            <Link to="/product">Casual Faux Leather</Link>
                           </li>
                           <li>
-                            <Link to="/product">
-                              Genuine Leather
-                            </Link>
+                            <Link to="/product">Genuine Leather</Link>
                           </li>
                         </ul>
                       </li>
@@ -593,22 +580,16 @@ function Vendor() {
                             <Link to="/product">Gaming Laptops</Link>
                           </li>
                           <li>
-                            <Link to="/product">
-                              Ultraslim Laptops
-                            </Link>
+                            <Link to="/product">Ultraslim Laptops</Link>
                           </li>
                           <li>
                             <Link to="/product">Tablets</Link>
                           </li>
                           <li>
-                            <Link to="/product">
-                              Laptop Accessories
-                            </Link>
+                            <Link to="/product">Laptop Accessories</Link>
                           </li>
                           <li>
-                            <Link to="/product">
-                              Tablet Accessories
-                            </Link>
+                            <Link to="/product">Tablet Accessories</Link>
                           </li>
                         </ul>
                       </li>
@@ -618,13 +599,19 @@ function Vendor() {
                     <Link to="blog-category-fullwidth.html">Blog</Link>
                     <ul className="dropdown">
                       <li>
-                        <Link to="blog-category-grid.html">Blog Category Grid</Link>
+                        <Link to="blog-category-grid.html">
+                          Blog Category Grid
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-list.html">Blog Category List</Link>
+                        <Link to="blog-category-list.html">
+                          Blog Category List
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-big.html">Blog Category Big</Link>
+                        <Link to="blog-category-big.html">
+                          Blog Category Big
+                        </Link>
                       </li>
                       <li>
                         <Link to="blog-category-fullwidth.html">
@@ -641,7 +628,9 @@ function Vendor() {
                             <Link to="blog-post-right.html">Right Sidebar</Link>
                           </li>
                           <li>
-                            <Link to="blog-post-fullwidth.html">No Sidebar</Link>
+                            <Link to="blog-post-fullwidth.html">
+                              No Sidebar
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -666,10 +655,14 @@ function Vendor() {
                         <Link to="page-register.html">Register</Link>
                       </li>
                       <li>
-                        <Link to="page-purchase-guide.html">Purchase Guide</Link>
+                        <Link to="page-purchase-guide.html">
+                          Purchase Guide
+                        </Link>
                       </li>
                       <li>
-                        <Link to="page-privacy-policy.html">Privacy Policy</Link>
+                        <Link to="page-privacy-policy.html">
+                          Privacy Policy
+                        </Link>
                       </li>
                       <li>
                         <Link to="page-terms.html">Terms of Service</Link>
@@ -1261,9 +1254,7 @@ function Vendor() {
                         <Link to="shop-grid-right.html">Pet Foods</Link>
                       </div>
                       <h2>
-                        <Link to="/product">
-                          Blue Diamond Almonds Lightly
-                        </Link>
+                        <Link to="/product">Blue Diamond Almonds Lightly</Link>
                       </h2>
                       <div className="product-rate-cover">
                         <div className="product-rate d-inline-block">
@@ -2110,9 +2101,7 @@ function Vendor() {
                         <Link to="shop-grid-right.html">Pet Foods</Link>
                       </div>
                       <h2>
-                        <Link to="/product">
-                          Blue Diamond Almonds Lightly
-                        </Link>
+                        <Link to="/product">Blue Diamond Almonds Lightly</Link>
                       </h2>
                       <div className="product-rate-cover">
                         <div className="product-rate d-inline-block">
@@ -2619,58 +2608,56 @@ function Vendor() {
                 <h5 className="section-title style-1 mb-30">Category</h5>
                 <ul>
                   <li>
-                    
-                      {/* <img
+                    {/* <img
                         src="assets/imgs/theme/icons/category-1.svg"
                         alt=""
                       /> */}
-                      <input type="radio" value="Milks & Dairies" name="category" /> Milks & Dairies
-                      
-                    
+                    <input
+                      type="radio"
+                      value="Milks & Dairies"
+                      name="category"
+                    />{" "}
+                    Milks & Dairies
                     {/* <span className="count">30</span> */}
                   </li>
                   <li>
-                    
-                      {/* <img
+                    {/* <img
                         src="assets/imgs/theme/icons/category-2.svg"
                         alt=""
                       /> */}
-                      <input type="radio" value="Clothing" name="category" /> Clothing
-                      
-                    
+                    <input type="radio" value="Clothing" name="category" />{" "}
+                    Clothing
                     {/* <span className="count">35</span> */}
                   </li>
                   <li>
-                    
-                      {/* <img
+                    {/* <img
                         src="assets/imgs/theme/icons/category-3.svg"
                         alt=""
                       /> */}
-                      <input type="radio" value="Pet Foods" name="category" /> Pet Foods
-                      
-                    
+                    <input type="radio" value="Pet Foods" name="category" /> Pet
+                    Foods
                     {/* <span className="count">42</span> */}
                   </li>
                   <li>
-                    
-                      {/* <img
+                    {/* <img
                         src="assets/imgs/theme/icons/category-4.svg"
                         alt=""
                       /> */}
-                      <input type="radio" value="Baking material" name="category" /> Baking material
-                      
-                    
+                    <input
+                      type="radio"
+                      value="Baking material"
+                      name="category"
+                    />{" "}
+                    Baking material
                     {/* <span className="count">68</span> */}
                   </li>
                   <li>
-                    
-                      {/* <img
+                    {/* <img
                         src="assets/imgs/theme/icons/category-5.svg"
                         alt=""
                       /> */}
-                      <input type="radio" value="Fresh Fruit" name="category" /> Fresh Fruit
-                      
-                    
+                    <input type="radio" value="Fresh Fruit" name="category" />{" "}
+                    Fresh Fruit
                     {/* <span className="count">87</span> */}
                   </li>
                 </ul>
@@ -2747,10 +2734,7 @@ function Vendor() {
                     </div>
                   </div>
                 </div>
-                <Link
-                  to="#"
-                  className="btn btn-sm btn-default"
-                >
+                <Link to="#" className="btn btn-sm btn-default">
                   <i className="fi-rs-filter mr-5"></i> Fillter
                 </Link>
               </div>
@@ -2772,46 +2756,23 @@ function Vendor() {
         </div>
       </main>
       <footer className="main">
-        <section className="newsletter mb-15">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="position-relative newsletter-inner">
-                  <div className="newsletter-content">
-                    <h2 className="mb-20">
+        <section class="newsletter mb-15 wow animate__animated animate__fadeIn">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="position-relative newsletter-inner">
+                  <div class="newsletter-content">
+                    <h2 class="mb-20">
                       Stay home & get your daily <br />
                       needs from our shop
                     </h2>
-                    <p className="mb-45">
-                      Start You'r Daily Shopping with
-                      <span className="text-brand">Nest Mart</span>
+                    <p class="mb-45">
+                      Start You'r Daily Shopping with{" "}
+                      <span class="text-brand">Nest Mart</span>
                     </p>
-                    <form method="post">
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          required=""
-                          name="firstname"
-                          placeholder="Firstname"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          required=""
-                          name="lastname"
-                          placeholder="Lastname"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <input
-                          required=""
-                          type="email"
-                          name="email"
-                          placeholder="Enter your Email"
-                        />
-                      </div>
-                      <button className="btn" type="submit">
+                    <form class="form-subcriber d-flex">
+                      <input type="email" placeholder="Your emaill address" />
+                      <button class="btn" type="submit">
                         Subscribe
                       </button>
                     </form>

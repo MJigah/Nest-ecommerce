@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { appendScript } from "../utils/appendScript";
 
 function Product() {
-    const reloadPage = () => {
-        window.location.reload(false)
-    }
-    useEffect(() => {
-      appendScript("../assets/js/main8c94.js");
-    }, [])
-    
+  const reloadPage = () => {
+    window.location.reload(false);
+  };
+  useEffect(() => {
+    appendScript("../assets/js/main8c94.js");
+  }, []);
+
   return (
     <>
       <div
@@ -131,10 +131,7 @@ function Product() {
                   <div className="detail-info pr-30 pl-30">
                     <span className="stock-status out-stock"> Sale Off </span>
                     <h3 className="title-detail">
-                      <Link
-                        to="/"
-                        className="text-heading"
-                      >
+                      <Link to="/" className="text-heading">
                         Seeds of Change Organic Quinoa, Brown
                       </Link>
                     </h3>
@@ -263,9 +260,7 @@ function Product() {
                             </div>
                             <div className="shopping-cart-title">
                               <h4>
-                                <Link to="/">
-                                  Daisy Casual Bag
-                                </Link>
+                                <Link to="/">Daisy Casual Bag</Link>
                               </h4>
                               <h4>
                                 <span>1 × </span>$800.00
@@ -288,9 +283,7 @@ function Product() {
                             </div>
                             <div className="shopping-cart-title">
                               <h4>
-                                <Link to="/">
-                                  Corduroy Shirts
-                                </Link>
+                                <Link to="/">Corduroy Shirts</Link>
                               </h4>
                               <h4>
                                 <span>1 × </span>$3200.00
@@ -484,9 +477,7 @@ function Product() {
                         <Link to="#">Single Product</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/">
-                              Product – Right Sidebar
-                            </Link>
+                            <Link to="/">Product – Right Sidebar</Link>
                           </li>
                           <li>
                             <Link to="shop-product-left.html">
@@ -555,9 +546,7 @@ function Product() {
                         <Link to="vendors-list.html">Vendors List</Link>
                       </li>
                       <li>
-                        <Link to="/vendor">
-                          Vendor Details 01
-                        </Link>
+                        <Link to="/vendor">Vendor Details 01</Link>
                       </li>
                       <li>
                         <Link to="vendor-details-2.html">
@@ -582,19 +571,13 @@ function Product() {
                             <Link to="/">Dresses</Link>
                           </li>
                           <li>
-                            <Link to="/">
-                              Blouses & Shirts
-                            </Link>
+                            <Link to="/">Blouses & Shirts</Link>
                           </li>
                           <li>
-                            <Link to="/">
-                              Hoodies & Sweatshirts
-                            </Link>
+                            <Link to="/">Hoodies & Sweatshirts</Link>
                           </li>
                           <li>
-                            <Link to="/">
-                              Women's Sets
-                            </Link>
+                            <Link to="/">Women's Sets</Link>
                           </li>
                         </ul>
                       </li>
@@ -605,14 +588,10 @@ function Product() {
                             <Link to="/">Jackets</Link>
                           </li>
                           <li>
-                            <Link to="/">
-                              Casual Faux Leather
-                            </Link>
+                            <Link to="/">Casual Faux Leather</Link>
                           </li>
                           <li>
-                            <Link to="/">
-                              Genuine Leather
-                            </Link>
+                            <Link to="/">Genuine Leather</Link>
                           </li>
                         </ul>
                       </li>
@@ -620,27 +599,19 @@ function Product() {
                         <Link to="#">Technology</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/">
-                              Gaming Laptops
-                            </Link>
+                            <Link to="/">Gaming Laptops</Link>
                           </li>
                           <li>
-                            <Link to="/">
-                              Ultraslim Laptops
-                            </Link>
+                            <Link to="/">Ultraslim Laptops</Link>
                           </li>
                           <li>
                             <Link to="/">Tablets</Link>
                           </li>
                           <li>
-                            <Link to="/">
-                              Laptop Accessories
-                            </Link>
+                            <Link to="/">Laptop Accessories</Link>
                           </li>
                           <li>
-                            <Link to="/">
-                              Tablet Accessories
-                            </Link>
+                            <Link to="/">Tablet Accessories</Link>
                           </li>
                         </ul>
                       </li>
@@ -808,8 +779,7 @@ function Product() {
               <Link to="/" rel="nofollow">
                 <i className="fi-rs-home mr-5"></i>Home
               </Link>
-              <span></span>{" "}
-              <Link to="/vendor">[Vendor Name]</Link>
+              <span></span> <Link to="/vendor">[Vendor Name]</Link>
               <span></span> [Product Name]
             </div>
           </div>
@@ -1692,10 +1662,7 @@ function Product() {
                             <div className="product-cart-wrap hover-up">
                               <div className="product-img-action-wrap">
                                 <div className="product-img product-img-zoom">
-                                  <Link
-                                    to="/"
-                                    tabindex="0"
-                                  >
+                                  <Link to="/" tabindex="0">
                                     <img
                                       className="default-img"
                                       src="assets/imgs/shop/product-2-1.jpg"
@@ -1740,10 +1707,7 @@ function Product() {
                               </div>
                               <div className="product-content-wrap">
                                 <h2>
-                                  <Link
-                                    to="/"
-                                    tabindex="0"
-                                  >
+                                  <Link to="/" tabindex="0">
                                     Ulstra Bass Headphone
                                   </Link>
                                 </h2>
@@ -1761,10 +1725,7 @@ function Product() {
                             <div className="product-cart-wrap hover-up">
                               <div className="product-img-action-wrap">
                                 <div className="product-img product-img-zoom">
-                                  <Link
-                                    to="/"
-                                    tabindex="0"
-                                  >
+                                  <Link to="/" tabindex="0">
                                     <img
                                       className="default-img"
                                       src="assets/imgs/shop/product-3-1.jpg"
@@ -1809,10 +1770,7 @@ function Product() {
                               </div>
                               <div className="product-content-wrap">
                                 <h2>
-                                  <Link
-                                    to="/product"
-                                    tabindex="0"
-                                  >
+                                  <Link to="/product" tabindex="0">
                                     Smart Bluetooth Speaker
                                   </Link>
                                 </h2>
@@ -1830,10 +1788,7 @@ function Product() {
                             <div className="product-cart-wrap hover-up">
                               <div className="product-img-action-wrap">
                                 <div className="product-img product-img-zoom">
-                                  <Link
-                                    to="/"
-                                    tabindex="0"
-                                  >
+                                  <Link to="/" tabindex="0">
                                     <img
                                       className="default-img"
                                       src="assets/imgs/shop/product-4-1.jpg"
@@ -1878,10 +1833,7 @@ function Product() {
                               </div>
                               <div className="product-content-wrap">
                                 <h2>
-                                  <Link
-                                    to="/product"
-                                    tabindex="0"
-                                  >
+                                  <Link to="/product" tabindex="0">
                                     HomeSpeak 12UEA Goole
                                   </Link>
                                 </h2>
@@ -1899,10 +1851,7 @@ function Product() {
                             <div className="product-cart-wrap hover-up mb-0">
                               <div className="product-img-action-wrap">
                                 <div className="product-img product-img-zoom">
-                                  <Link
-                                    to="/"
-                                    tabindex="0"
-                                  >
+                                  <Link to="/" tabindex="0">
                                     <img
                                       className="default-img"
                                       src="assets/imgs/shop/product-5-1.jpg"
@@ -1947,10 +1896,7 @@ function Product() {
                               </div>
                               <div className="product-content-wrap">
                                 <h2>
-                                  <Link
-                                    to="/product"
-                                    tabindex="0"
-                                  >
+                                  <Link to="/product" tabindex="0">
                                     Dadua Camera 4K 2021EF
                                   </Link>
                                 </h2>
@@ -1981,9 +1927,7 @@ function Product() {
                       </div>
                       <div className="content pt-10">
                         <h5>
-                          <Link to="/product">
-                            Chen Cardigan
-                          </Link>
+                          <Link to="/product">Chen Cardigan</Link>
                         </h5>
                         <p className="price mb-0 mt-5">$99.50</p>
                         <div className="product-rate">
@@ -2000,9 +1944,7 @@ function Product() {
                       </div>
                       <div className="content pt-10">
                         <h6>
-                          <Link to="/product">
-                            Chen Sweater
-                          </Link>
+                          <Link to="/product">Chen Sweater</Link>
                         </h6>
                         <p className="price mb-0 mt-5">$89.50</p>
                         <div className="product-rate">
@@ -2019,9 +1961,7 @@ function Product() {
                       </div>
                       <div className="content pt-10">
                         <h6>
-                          <Link to="/product">
-                            Colorful Jacket
-                          </Link>
+                          <Link to="/product">Colorful Jacket</Link>
                         </h6>
                         <p className="price mb-0 mt-5">$25</p>
                         <div className="product-rate">
@@ -2052,46 +1992,23 @@ function Product() {
         </div>
       </main>
       <footer className="main">
-        <section className="newsletter mb-15">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="position-relative newsletter-inner">
-                  <div className="newsletter-content">
-                    <h2 className="mb-20">
+        <section class="newsletter mb-15 wow animate__animated animate__fadeIn">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="position-relative newsletter-inner">
+                  <div class="newsletter-content">
+                    <h2 class="mb-20">
                       Stay home & get your daily <br />
                       needs from our shop
                     </h2>
-                    <p className="mb-45">
-                      Start You'r Daily Shopping with
-                      <span className="text-brand">Nest Mart</span>
+                    <p class="mb-45">
+                      Start You'r Daily Shopping with{" "}
+                      <span class="text-brand">Nest Mart</span>
                     </p>
-                    <form method="post">
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          required=""
-                          name="firstname"
-                          placeholder="Firstname"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          required=""
-                          name="lastname"
-                          placeholder="Lastname"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <input
-                          required=""
-                          type="email"
-                          name="email"
-                          placeholder="Enter your Email"
-                        />
-                      </div>
-                      <button className="btn" type="submit">
+                    <form class="form-subcriber d-flex">
+                      <input type="email" placeholder="Your emaill address" />
+                      <button class="btn" type="submit">
                         Subscribe
                       </button>
                     </form>

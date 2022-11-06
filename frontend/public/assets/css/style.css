@@ -40,23 +40,9 @@ input[type="radio"] {
   display: block;
 }
 
-.newsletter .newsletter-inner .newsletter-content form {
-  border-radius: 0;
-  max-width: 40%;
-  padding: 10px;
-  background: transparent;
-}
-
-.newsletter .newsletter-inner .newsletter-content form input {
-  background: none;
-  padding-left: 10px;
-  border-radius: 0;
-  width: 100%;
-  border: 1px solid #7e7e7eb2;
-}
-
-.newsletter .newsletter-inner .newsletter-content form button {
-  width: 100%;
+.header-action-2 .header-action-icon-2,
+.hotline{
+  margin: 0 10px;
 }
 
 .product-card-bottom {

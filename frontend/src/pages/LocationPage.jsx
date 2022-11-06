@@ -5,7 +5,7 @@ import { appendScript } from "../utils/appendScript";
 function LocationPage() {
   useEffect(() => {
     appendScript("../assets/js/main8c94.js");
-  }, [])
+  }, []);
   return (
     <>
       <header className="header-area header-style-1 header-height-2">
@@ -40,14 +40,27 @@ function LocationPage() {
         <div className="header-middle header-middle-ptb-1 d-none sticky-bar d-lg-block">
           <div className="container">
             <div className="header-wrap">
-              <div className="logo logo-width-1 col-xl-7 col-lg-6">
+              <div className="logo logo-width-1 col-xl-6 col-lg-6">
                 <Link to="/">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
-              <div className="header-right col-xl-3 col-lg-3">
+              <div className="header-right col-xl-4 col-lg-3">
                 <div className="header-action-right">
                   <div className="header-action-2">
+                    <div class="header-action-icon-2">
+                      <a href="shop-wishlist.html">
+                        <img
+                          class="svgInject"
+                          alt="Nest"
+                          src="assets/imgs/theme/icons/icon-heart.svg"
+                        />
+                        <span class="pro-count blue">6</span>
+                      </a>
+                      <a href="shop-wishlist.html">
+                        <span class="lable">Wishlist</span>
+                      </a>
+                    </div>
                     <div className="header-action-icon-2">
                       <Link className="mini-cart-icon" to="/cart">
                         <img
@@ -367,7 +380,9 @@ function LocationPage() {
                         <Link to="/vendor">Vendor Details 01</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-2.html">Vendor Details 02</Link>
+                        <Link to="vendor-details-2.html">
+                          Vendor Details 02
+                        </Link>
                       </li>
                       <li>
                         <Link to="vendor-dashboard.html">Vendor Dashboard</Link>
@@ -397,7 +412,9 @@ function LocationPage() {
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">Women's Sets</Link>
+                            <Link to="shop-product-right.html">
+                              Women's Sets
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -423,7 +440,9 @@ function LocationPage() {
                         <Link to="#">Technology</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="shop-product-right.html">Gaming Laptops</Link>
+                            <Link to="shop-product-right.html">
+                              Gaming Laptops
+                            </Link>
                           </li>
                           <li>
                             <Link to="shop-product-right.html">
@@ -451,13 +470,19 @@ function LocationPage() {
                     <Link to="blog-category-fullwidth.html">Blog</Link>
                     <ul className="dropdown">
                       <li>
-                        <Link to="blog-category-grid.html">Blog Category Grid</Link>
+                        <Link to="blog-category-grid.html">
+                          Blog Category Grid
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-list.html">Blog Category List</Link>
+                        <Link to="blog-category-list.html">
+                          Blog Category List
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-big.html">Blog Category Big</Link>
+                        <Link to="blog-category-big.html">
+                          Blog Category Big
+                        </Link>
                       </li>
                       <li>
                         <Link to="blog-category-fullwidth.html">
@@ -474,7 +499,9 @@ function LocationPage() {
                             <Link to="blog-post-right.html">Right Sidebar</Link>
                           </li>
                           <li>
-                            <Link to="blog-post-fullwidth.html">No Sidebar</Link>
+                            <Link to="blog-post-fullwidth.html">
+                              No Sidebar
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -499,10 +526,14 @@ function LocationPage() {
                         <Link to="page-register.html">Register</Link>
                       </li>
                       <li>
-                        <Link to="page-purchase-guide.html">Purchase Guide</Link>
+                        <Link to="page-purchase-guide.html">
+                          Purchase Guide
+                        </Link>
                       </li>
                       <li>
-                        <Link to="page-privacy-policy.html">Privacy Policy</Link>
+                        <Link to="page-privacy-policy.html">
+                          Privacy Policy
+                        </Link>
                       </li>
                       <li>
                         <Link to="page-terms.html">Terms of Service</Link>
@@ -1944,54 +1975,28 @@ function LocationPage() {
         </div>
       </main>
       <footer className="main">
-        <section className="newsletter mb-15">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="position-relative newsletter-inner">
-                  <div className="newsletter-content">
-                    <h2 className="mb-20">
+        <section class="newsletter mb-15 wow animate__animated animate__fadeIn">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="position-relative newsletter-inner">
+                  <div class="newsletter-content">
+                    <h2 class="mb-20">
                       Stay home & get your daily <br />
                       needs from our shop
                     </h2>
-                    <p className="mb-45">
-                      Start You'r Daily Shopping with
-                      <span className="text-brand">Nest Mart</span>
+                    <p class="mb-45">
+                      Start You'r Daily Shopping with{" "}
+                      <span class="text-brand">Nest Mart</span>
                     </p>
-                    <form method="post">
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          required=""
-                          name="firstname"
-                          placeholder="Firstname"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          required=""
-                          name="lastname"
-                          placeholder="Lastname"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <input
-                          required=""
-                          type="email"
-                          name="email"
-                          placeholder="Enter your Email"
-                        />
-                      </div>
-                      <button className="btn" type="submit">
+                    <form class="form-subcriber d-flex">
+                      <input type="email" placeholder="Your emaill address" />
+                      <button class="btn" type="submit">
                         Subscribe
                       </button>
                     </form>
                   </div>
-                  <img
-                    src="assets/imgs/banner/banner-13.png"
-                    alt="newsletter"
-                  />
+                  <img src="assets/imgs/banner/banner-9.png" alt="newsletter" />
                 </div>
               </div>
             </div>
