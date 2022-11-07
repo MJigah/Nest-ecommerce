@@ -49,17 +49,17 @@ function LocationPage() {
                 <div className="header-action-right">
                   <div className="header-action-2">
                     <div className="header-action-icon-2">
-                      <a href="shop-wishlist.html">
+                      <Link to="/wishlist">
                         <img
                           className="svgInject"
                           alt="Nest"
                           src="assets/imgs/theme/icons/icon-heart.svg"
                         />
                         <span className="pro-count blue">6</span>
-                      </a>
-                      <a href="shop-wishlist.html">
+                      </Link>
+                      <Link to="/wishlist">
                         <span className="lable">Wishlist</span>
-                      </a>
+                      </Link>
                     </div>
                     <div className="header-action-icon-2">
                       <Link className="mini-cart-icon" to="/cart">
@@ -331,7 +331,7 @@ function LocationPage() {
                         <Link to="shop-filter.html">Shop – Filter</Link>
                       </li>
                       <li>
-                        <Link to="shop-wishlist.html">Shop – Wishlist</Link>
+                        <Link to="/wishlist">Shop – Wishlist</Link>
                       </li>
                       <li>
                         <Link to="/cart">Shop – Cart</Link>
@@ -2298,15 +2298,6 @@ function LocationPage() {
                 />
                 <p>
                   1900 - 6666<span>Working 8:00 - 22:00</span>
-                </p>
-              </div>
-              <div className="hotline d-lg-inline-flex">
-                <img
-                  src="assets/imgs/theme/icons/phone-call.svg"
-                  alt="hotline"
-                />
-                <p>
-                  1900 - 8888<span>24/7 Support Center</span>
                 </p>
               </div>
             </div>

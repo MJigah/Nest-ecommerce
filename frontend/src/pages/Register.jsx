@@ -40,14 +40,27 @@ function Register() {
         <div className="header-middle header-middle-ptb-1 d-none sticky-bar d-lg-block">
           <div className="container">
             <div className="header-wrap">
-              <div className="logo logo-width-1 col-xl-7 col-lg-6">
+              <div className="logo logo-width-1 col-xl-6 col-lg-6">
                 <Link to="/">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
-              <div className="header-right col-xl-3 col-lg-3">
+              <div className="header-right col-xl-4 col-lg-3">
                 <div className="header-action-right">
                   <div className="header-action-2">
+                    <div className="header-action-icon-2">
+                      <Link to="/wishlist">
+                        <img
+                          className="svgInject"
+                          alt="Nest"
+                          src="assets/imgs/theme/icons/icon-heart.svg"
+                        />
+                        <span className="pro-count blue">6</span>
+                      </Link>
+                      <Link to="/wishlist">
+                        <span className="lable">Wishlist</span>
+                      </Link>
+                    </div>
                     <div className="header-action-icon-2">
                       <Link className="mini-cart-icon" to="/cart">
                         <img
@@ -157,7 +170,7 @@ function Register() {
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-wishlist.html">
+                            <Link to="/">
                               <i className="fi fi-rs-heart mr-10"></i>My
                               Wishlist
                             </Link>
@@ -196,7 +209,7 @@ function Register() {
           <div className="container">
             <div className="header-wrap header-space-between position-relative">
               <div className="logo logo-width-1 d-block d-lg-none">
-                <Link to="/">
+                <Link to="index-2.html">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
@@ -216,7 +229,7 @@ function Register() {
         <div className="mobile-header-wrapper-inner">
           <div className="mobile-header-top">
             <div className="mobile-header-logo">
-              <Link to="/">
+              <Link to="index-2.html">
                 <img src="assets/imgs/theme/logo.svg" alt="logo" />
               </Link>
             </div>
@@ -241,10 +254,10 @@ function Register() {
               <nav>
                 <ul className="mobile-menu font-heading">
                   <li className="menu-item-has-children">
-                    <Link to="/">Home</Link>
+                    <Link to="index-2.html">Home</Link>
                     <ul className="dropdown">
                       <li>
-                        <Link to="/">Home 1</Link>
+                        <Link to="index-2.html">Home 1</Link>
                       </li>
                       <li>
                         <Link to="index-3.html">Home 2</Link>
@@ -318,7 +331,7 @@ function Register() {
                         <Link to="shop-filter.html">Shop – Filter</Link>
                       </li>
                       <li>
-                        <Link to="shop-wishlist.html">Shop – Wishlist</Link>
+                        <Link to="/wishlist">Shop – Wishlist</Link>
                       </li>
                       <li>
                         <Link to="/cart">Shop – Cart</Link>
@@ -364,10 +377,12 @@ function Register() {
                         <Link to="vendors-list.html">Vendors List</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-1.html">Vendor Details 01</Link>
+                        <Link to="/vendor">Vendor Details 01</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-2.html">Vendor Details 02</Link>
+                        <Link to="vendor-details-2.html">
+                          Vendor Details 02
+                        </Link>
                       </li>
                       <li>
                         <Link to="vendor-dashboard.html">Vendor Dashboard</Link>
@@ -397,7 +412,9 @@ function Register() {
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">Women's Sets</Link>
+                            <Link to="shop-product-right.html">
+                              Women's Sets
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -423,7 +440,9 @@ function Register() {
                         <Link to="#">Technology</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="shop-product-right.html">Gaming Laptops</Link>
+                            <Link to="shop-product-right.html">
+                              Gaming Laptops
+                            </Link>
                           </li>
                           <li>
                             <Link to="shop-product-right.html">
@@ -451,13 +470,19 @@ function Register() {
                     <Link to="blog-category-fullwidth.html">Blog</Link>
                     <ul className="dropdown">
                       <li>
-                        <Link to="blog-category-grid.html">Blog Category Grid</Link>
+                        <Link to="blog-category-grid.html">
+                          Blog Category Grid
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-list.html">Blog Category List</Link>
+                        <Link to="blog-category-list.html">
+                          Blog Category List
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-big.html">Blog Category Big</Link>
+                        <Link to="blog-category-big.html">
+                          Blog Category Big
+                        </Link>
                       </li>
                       <li>
                         <Link to="blog-category-fullwidth.html">
@@ -474,7 +499,9 @@ function Register() {
                             <Link to="blog-post-right.html">Right Sidebar</Link>
                           </li>
                           <li>
-                            <Link to="blog-post-fullwidth.html">No Sidebar</Link>
+                            <Link to="blog-post-fullwidth.html">
+                              No Sidebar
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -499,10 +526,14 @@ function Register() {
                         <Link to="page-register.html">Register</Link>
                       </li>
                       <li>
-                        <Link to="page-purchase-guide.html">Purchase Guide</Link>
+                        <Link to="page-purchase-guide.html">
+                          Purchase Guide
+                        </Link>
                       </li>
                       <li>
-                        <Link to="page-privacy-policy.html">Privacy Policy</Link>
+                        <Link to="page-privacy-policy.html">
+                          Privacy Policy
+                        </Link>
                       </li>
                       <li>
                         <Link to="page-terms.html">Terms of Service</Link>
@@ -536,17 +567,17 @@ function Register() {
             <div className="mobile-header-info-wrap">
               <div className="single-mobile-header-info">
                 <Link to="page-contact.html">
-                  <i className="fi-rs-marker"></i> Our location{" "}
+                  <i className="fi-rs-marker"></i> Our location
                 </Link>
               </div>
               <div className="single-mobile-header-info">
                 <Link to="/login">
-                  <i className="fi-rs-user"></i>Log In / Sign Up{" "}
+                  <i className="fi-rs-user"></i>Log In / Sign Up
                 </Link>
               </div>
               <div className="single-mobile-header-info">
                 <Link to="#">
-                  <i className="fi-rs-headphones"></i>(+01) - 2345 - 6789{" "}
+                  <i className="fi-rs-headphones"></i>(+01) - 2345 - 6789
                 </Link>
               </div>
             </div>

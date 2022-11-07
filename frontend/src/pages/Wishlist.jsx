@@ -2,199 +2,12 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { appendScript } from "../utils/appendScript";
 
-function Homepage() {
+function Wishlist() {
   useEffect(() => {
     appendScript("../assets/js/main8c94.js");
   }, []);
   return (
     <>
-      <div
-        className="modal fade custom-modal"
-        id="quickViewModal"
-        tabindex="-1"
-        aria-labelledby="quickViewModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-            <div className="modal-body">
-              <div className="row">
-                <div className="col-md-6 col-sm-12 col-xs-12 mb-md-0 mb-sm-5">
-                  <div className="detail-gallery">
-                    <span className="zoom-icon">
-                      <i className="fi-rs-search"></i>
-                    </span>
-                    {/* <!-- MAIN SLIDES --> */}
-                    <div className="product-image-slider">
-                      <figure className="border-radius-10">
-                        <img
-                          src="assets/imgs/shop/product-16-2.jpg"
-                          alt="product_image"
-                        />
-                      </figure>
-                      <figure className="border-radius-10">
-                        <img
-                          src="assets/imgs/shop/product-16-1.jpg"
-                          alt="product_image"
-                        />
-                      </figure>
-                      <figure className="border-radius-10">
-                        <img
-                          src="assets/imgs/shop/product-16-3.jpg"
-                          alt="product_image"
-                        />
-                      </figure>
-                      <figure className="border-radius-10">
-                        <img
-                          src="assets/imgs/shop/product-16-4.jpg"
-                          alt="product_image"
-                        />
-                      </figure>
-                      <figure className="border-radius-10">
-                        <img
-                          src="assets/imgs/shop/product-16-5.jpg"
-                          alt="product_image"
-                        />
-                      </figure>
-                      <figure className="border-radius-10">
-                        <img
-                          src="assets/imgs/shop/product-16-6.jpg"
-                          alt="product_image"
-                        />
-                      </figure>
-                      <figure className="border-radius-10">
-                        <img
-                          src="assets/imgs/shop/product-16-7.jpg"
-                          alt="product_image"
-                        />
-                      </figure>
-                    </div>
-                    {/* <!-- THUMBNAILS --> */}
-                    <div className="slider-nav-thumbnails">
-                      <div>
-                        <img
-                          src="assets/imgs/shop/thumbnail-3.jpg"
-                          alt="product_image"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="assets/imgs/shop/thumbnail-4.jpg"
-                          alt="product_image"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="assets/imgs/shop/thumbnail-5.jpg"
-                          alt="product_image"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="assets/imgs/shop/thumbnail-6.jpg"
-                          alt="product_image"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="assets/imgs/shop/thumbnail-7.jpg"
-                          alt="product_image"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="assets/imgs/shop/thumbnail-8.jpg"
-                          alt="product_image"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="assets/imgs/shop/thumbnail-9.jpg"
-                          alt="product_image"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  {/* <!-- End Gallery --> */}
-                </div>
-                <div className="col-md-6 col-sm-12 col-xs-12">
-                  <div className="detail-info pr-30 pl-30">
-                    <span className="stock-status out-stock"> Sale Off </span>
-                    <h3 className="title-detail">
-                      <Link
-                        to="shop-product-right.html"
-                        className="text-heading"
-                      >
-                        Seeds of Change Organic Quinoa, Brown
-                      </Link>
-                    </h3>
-                    <div className="product-detail-rating">
-                      <div className="product-rate-cover text-end">
-                        <div className="product-rate d-inline-block">
-                          <div
-                            className="product-rating"
-                            style={{ width: "90%" }}
-                          ></div>
-                        </div>
-                        <span className="font-small ml-5 text-muted">
-                          (32 reviews)
-                        </span>
-                      </div>
-                    </div>
-                    <div className="clearfix product-price-cover">
-                      <div className="product-price primary-color float-left">
-                        <span className="current-price text-brand">$38</span>
-                        <span>
-                          <span className="save-price font-md color3 ml-15">
-                            26% Off
-                          </span>
-                          <span className="old-price font-md ml-15">$52</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div className="detail-extralink mb-30">
-                      <div className="detail-qty border radius">
-                        <Link to="#" className="qty-down">
-                          <i className="fi-rs-angle-small-down"></i>
-                        </Link>
-                        <span className="qty-val">1</span>
-                        <Link to="#" className="qty-up">
-                          <i className="fi-rs-angle-small-up"></i>
-                        </Link>
-                      </div>
-                      <div className="product-extra-link2">
-                        <button
-                          type="submit"
-                          className="button button-add-to-cart"
-                        >
-                          <i className="fi-rs-shopping-cart"></i>Add to cart
-                        </button>
-                      </div>
-                    </div>
-                    <div className="font-xs">
-                      <ul>
-                        <li className="mb-5">
-                          Vendor: <span className="text-brand">Nest</span>
-                        </li>
-                        <li className="mb-5">
-                          MFG:<span className="text-brand"> Jun 4.2021</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  {/* <!-- Detail Info --> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <header className="header-area header-style-1 header-height-2">
         <div
           className="header-top header-top-ptb-1 d-none d-lg-block header-bottom-bg-color"
@@ -236,7 +49,7 @@ function Homepage() {
                 <div className="header-action-right">
                   <div className="header-action-2">
                     <div className="header-action-icon-2">
-                      <Link to="/wishlist">
+                      <Link to="#">
                         <img
                           className="svgInject"
                           alt="Nest"
@@ -244,7 +57,7 @@ function Homepage() {
                         />
                         <span className="pro-count blue">6</span>
                       </Link>
-                      <Link to="/wishlist">
+                      <Link to="#">
                         <span className="lable">Wishlist</span>
                       </Link>
                     </div>
@@ -263,7 +76,7 @@ function Homepage() {
                         <ul>
                           <li>
                             <div className="shopping-cart-img">
-                              <Link to="shop-product-right.html">
+                              <Link to="/product">
                                 <img
                                   alt="Nest"
                                   src="assets/imgs/shop/thumbnail-3.jpg"
@@ -272,7 +85,7 @@ function Homepage() {
                             </div>
                             <div className="shopping-cart-title">
                               <h4>
-                                <Link to="shop-product-right.html">
+                                <Link to="/product">
                                   Daisy Casual Bag
                                 </Link>
                               </h4>
@@ -288,7 +101,7 @@ function Homepage() {
                           </li>
                           <li>
                             <div className="shopping-cart-img">
-                              <Link to="shop-product-right.html">
+                              <Link to="/product">
                                 <img
                                   alt="Nest"
                                   src="assets/imgs/shop/thumbnail-2.jpg"
@@ -297,7 +110,7 @@ function Homepage() {
                             </div>
                             <div className="shopping-cart-title">
                               <h4>
-                                <Link to="shop-product-right.html">
+                                <Link to="/product">
                                   Corduroy Shirts
                                 </Link>
                               </h4>
@@ -396,7 +209,7 @@ function Homepage() {
           <div className="container">
             <div className="header-wrap header-space-between position-relative">
               <div className="logo logo-width-1 d-block d-lg-none">
-                <Link to="index-2.html">
+                <Link to="/">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
@@ -416,7 +229,7 @@ function Homepage() {
         <div className="mobile-header-wrapper-inner">
           <div className="mobile-header-top">
             <div className="mobile-header-logo">
-              <Link to="index-2.html">
+              <Link to="/">
                 <img src="assets/imgs/theme/logo.svg" alt="logo" />
               </Link>
             </div>
@@ -441,10 +254,10 @@ function Homepage() {
               <nav>
                 <ul className="mobile-menu font-heading">
                   <li className="menu-item-has-children">
-                    <Link to="index-2.html">Home</Link>
+                    <Link to="/">Home</Link>
                     <ul className="dropdown">
                       <li>
-                        <Link to="index-2.html">Home 1</Link>
+                        <Link to="/">Home 1</Link>
                       </li>
                       <li>
                         <Link to="index-3.html">Home 2</Link>
@@ -493,7 +306,7 @@ function Homepage() {
                         <Link to="#">Single Product</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="shop-product-right.html">
+                            <Link to="/product">
                               Product – Right Sidebar
                             </Link>
                           </li>
@@ -518,7 +331,7 @@ function Homepage() {
                         <Link to="shop-filter.html">Shop – Filter</Link>
                       </li>
                       <li>
-                        <Link to="/wishlist">Shop – Wishlist</Link>
+                        <Link to="#">Shop – Wishlist</Link>
                       </li>
                       <li>
                         <Link to="/cart">Shop – Cart</Link>
@@ -586,20 +399,20 @@ function Homepage() {
                         <Link to="#">Women's Fashion</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="shop-product-right.html">Dresses</Link>
+                            <Link to="/product">Dresses</Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">
+                            <Link to="/product">
                               Blouses & Shirts
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">
+                            <Link to="/product">
                               Hoodies & Sweatshirts
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">
+                            <Link to="/product">
                               Women's Sets
                             </Link>
                           </li>
@@ -609,15 +422,15 @@ function Homepage() {
                         <Link to="#">Men's Fashion</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="shop-product-right.html">Jackets</Link>
+                            <Link to="/product">Jackets</Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">
+                            <Link to="/product">
                               Casual Faux Leather
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">
+                            <Link to="/product">
                               Genuine Leather
                             </Link>
                           </li>
@@ -627,25 +440,25 @@ function Homepage() {
                         <Link to="#">Technology</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="shop-product-right.html">
+                            <Link to="/product">
                               Gaming Laptops
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">
+                            <Link to="/product">
                               Ultraslim Laptops
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">Tablets</Link>
+                            <Link to="/product">Tablets</Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">
+                            <Link to="/product">
                               Laptop Accessories
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">
+                            <Link to="/product">
                               Tablet Accessories
                             </Link>
                           </li>
@@ -809,52 +622,359 @@ function Homepage() {
       </div>
       {/* <!--End header--> */}
       <main className="main">
-        <div className="page-content mb-50">
+        <div className="page-header breadcrumb-wrap">
           <div className="container">
-            <div className="row">
-              <div className="col-lg-9 m-auto">
-                <div className="single-page pt-50 pr-30">
-                  <div className="single-header style-2">
-                    <div className="row">
-                      <div className="col-xl-10 col-lg-12 m-auto">
-                        <h2 className="mb-10 text-center">
-                          Shop Easy, Shop Quick
-                        </h2>
-                        <p className="mb-10 mt-45" style={{fontSize: "25px", fontWeight: "bold"}}>
-                          <img
-                            className="mr-10"
-                            src="assets/imgs/theme/icons/icon-location.svg"
-                            alt="location-icon"
-                          />
-                          Where are you delivering to?
-                        </p>
-                        <div className="search-form mt-20">
-                          <form action="#">
-                            <input
-                              type="text"
-                              placeholder="Search City or Town"
-                            />
-                            <button type="submit">
-                              <i className="fi-rs-search"></i>
-                            </button>
-                          </form>
+            <div className="breadcrumb">
+              <Link to="/" rel="nofollow">
+                <i className="fi-rs-home mr-5"></i>Home
+              </Link>
+              <span></span> Shop <span></span> Fillter
+            </div>
+          </div>
+        </div>
+        <div className="container mb-30 mt-50">
+          <div className="row">
+            <div className="col-xl-10 col-lg-12 m-auto">
+              <div className="mb-50">
+                <h1 className="heading-2 mb-10">Your Wishlist</h1>
+                <h6 className="text-body">
+                  There are <span className="text-brand">5</span> products in
+                  this list
+                </h6>
+              </div>
+              <div className="table-responsive shopping-summery">
+                <table className="table table-wishlist">
+                  <thead>
+                    <tr className="main-heading">
+                      <th className="custome-checkbox start pl-30">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="checkbox"
+                          id="exampleCheckbox11"
+                          value=""
+                        />
+                        <label
+                          className="form-check-label"
+                          for="exampleCheckbox11"
+                        ></label>
+                      </th>
+                      <th scope="col" colspan="2">
+                        Product
+                      </th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Stock Status</th>
+                      <th scope="col">Action</th>
+                      <th scope="col" className="end">
+                        Remove
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="pt-30">
+                      <td className="custome-checkbox pl-30">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="checkbox"
+                          id="exampleCheckbox1"
+                          value=""
+                        />
+                        <label
+                          className="form-check-label"
+                          for="exampleCheckbox1"
+                        ></label>
+                      </td>
+                      <td className="image product-thumbnail pt-40">
+                        <img src="assets/imgs/shop/product-1-1.jpg" alt="#" />
+                      </td>
+                      <td className="product-des product-name">
+                        <h6>
+                          <Link
+                            className="product-name mb-10"
+                            to="/product"
+                          >
+                            Field Roast Chao Cheese Creamy Original
+                          </Link>
+                        </h6>
+                        <div className="product-rate-cover">
+                          <div className="product-rate d-inline-block">
+                            <div
+                              className="product-rating"
+                              style={{ width: "90%" }}
+                            ></div>
+                          </div>
+                          <span className="font-small ml-5 text-muted">
+                            {" "}
+                            (4.0)
+                          </span>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <figure className="text-center single-thumbnail">
-                    <img
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        paddingTop: "60px",
-                        margin: "50px",
-                      }}
-                      src={"./assets/imgs/banner/home.png"}
-                      alt=""
-                    />
-                  </figure>
-                </div>
+                      </td>
+                      <td className="price" data-title="Price">
+                        <h3 className="text-brand">$2.51</h3>
+                      </td>
+                      <td
+                        className="text-center detail-info"
+                        data-title="Stock"
+                      >
+                        <span className="stock-status in-stock mb-0">
+                          {" "}
+                          In Stock{" "}
+                        </span>
+                      </td>
+                      <td className="text-right" data-title="Cart">
+                        <button className="btn btn-sm">Add to cart</button>
+                      </td>
+                      <td className="action text-center" data-title="Remove">
+                        <Link to="#" className="text-body">
+                          <i className="fi-rs-trash"></i>
+                        </Link>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="custome-checkbox pl-30">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="checkbox"
+                          id="exampleCheckbox2"
+                          value=""
+                        />
+                        <label
+                          className="form-check-label"
+                          for="exampleCheckbox2"
+                        ></label>
+                      </td>
+                      <td className="image product-thumbnail">
+                        <img src="assets/imgs/shop/product-2-1.jpg" alt="#" />
+                      </td>
+                      <td className="product-des product-name">
+                        <h6>
+                          <Link
+                            className="product-name mb-10"
+                            to="/product"
+                          >
+                            Blue Diamond Almonds Lightly Salted
+                          </Link>
+                        </h6>
+                        <div className="product-rate-cover">
+                          <div className="product-rate d-inline-block">
+                            <div
+                              className="product-rating"
+                              style={{ width: "90%" }}
+                            ></div>
+                          </div>
+                          <span className="font-small ml-5 text-muted">
+                            {" "}
+                            (4.0)
+                          </span>
+                        </div>
+                      </td>
+                      <td className="price" data-title="Price">
+                        <h3 className="text-brand">$3.2</h3>
+                      </td>
+                      <td
+                        className="text-center detail-info"
+                        data-title="Stock"
+                      >
+                        <span className="stock-status in-stock mb-0">
+                          {" "}
+                          In Stock{" "}
+                        </span>
+                      </td>
+                      <td className="text-right" data-title="Cart">
+                        <button className="btn btn-sm">Add to cart</button>
+                      </td>
+                      <td className="action text-center" data-title="Remove">
+                        <Link to="#" className="text-body">
+                          <i className="fi-rs-trash"></i>
+                        </Link>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="custome-checkbox pl-30">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="checkbox"
+                          id="exampleCheckbox3"
+                          value=""
+                        />
+                        <label
+                          className="form-check-label"
+                          for="exampleCheckbox3"
+                        ></label>
+                      </td>
+                      <td className="image product-thumbnail">
+                        <img src="assets/imgs/shop/product-3-1.jpg" alt="#" />
+                      </td>
+                      <td className="product-des product-name">
+                        <h6>
+                          <Link
+                            className="product-name mb-10"
+                            to="/product"
+                          >
+                            Fresh Organic Mustard Leaves Bell Pepper
+                          </Link>
+                        </h6>
+                        <div className="product-rate-cover">
+                          <div className="product-rate d-inline-block">
+                            <div
+                              className="product-rating"
+                              style={{ width: "90%" }}
+                            ></div>
+                          </div>
+                          <span className="font-small ml-5 text-muted">
+                            {" "}
+                            (4.0)
+                          </span>
+                        </div>
+                      </td>
+                      <td className="price" data-title="Price">
+                        <h3 className="text-brand">$2.43</h3>
+                      </td>
+                      <td
+                        className="text-center detail-info"
+                        data-title="Stock"
+                      >
+                        <span className="stock-status in-stock mb-0">
+                          {" "}
+                          In Stock{" "}
+                        </span>
+                      </td>
+                      <td className="text-right" data-title="Cart">
+                        <button className="btn btn-sm">Add to cart</button>
+                      </td>
+                      <td className="action text-center" data-title="Remove">
+                        <Link to="#" className="text-body">
+                          <i className="fi-rs-trash"></i>
+                        </Link>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="custome-checkbox pl-30">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="checkbox"
+                          id="exampleCheckbox4"
+                          value=""
+                        />
+                        <label
+                          className="form-check-label"
+                          for="exampleCheckbox4"
+                        ></label>
+                      </td>
+                      <td className="image product-thumbnail">
+                        <img src="assets/imgs/shop/product-4-1.jpg" alt="#" />
+                      </td>
+                      <td className="product-des product-name">
+                        <h6>
+                          <Link
+                            className="product-name mb-10"
+                            to="/product"
+                          >
+                            Angie’s Boomchickapop Sweet & Salty{" "}
+                          </Link>
+                        </h6>
+                        <div className="product-rate-cover">
+                          <div className="product-rate d-inline-block">
+                            <div
+                              className="product-rating"
+                              style={{ width: "90%" }}
+                            ></div>
+                          </div>
+                          <span className="font-small ml-5 text-muted">
+                            {" "}
+                            (4.0)
+                          </span>
+                        </div>
+                      </td>
+                      <td className="price" data-title="Price">
+                        <h3 className="text-brand">$3.21</h3>
+                      </td>
+                      <td
+                        className="text-center detail-info"
+                        data-title="Stock"
+                      >
+                        <span className="stock-status out-stock mb-0">
+                          {" "}
+                          Out Stock{" "}
+                        </span>
+                      </td>
+                      <td className="text-right" data-title="Cart">
+                        <button className="btn btn-sm btn-secondary">
+                          Contact Us
+                        </button>
+                      </td>
+                      <td className="action text-center" data-title="Remove">
+                        <Link to="#" className="text-body">
+                          <i className="fi-rs-trash"></i>
+                        </Link>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="custome-checkbox pl-30">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          name="checkbox"
+                          id="exampleCheckbox5"
+                          value=""
+                        />
+                        <label
+                          className="form-check-label"
+                          for="exampleCheckbox5"
+                        ></label>
+                      </td>
+                      <td className="image product-thumbnail">
+                        <img src="assets/imgs/shop/product-5-1.jpg" alt="#" />
+                      </td>
+                      <td className="product-des product-name">
+                        <h6>
+                          <Link
+                            className="product-name mb-10"
+                            to="/product"
+                          >
+                            Foster Farms Takeout Crispy Classic
+                          </Link>
+                        </h6>
+                        <div className="product-rate-cover">
+                          <div className="product-rate d-inline-block">
+                            <div
+                              className="product-rating"
+                              style={{ width: "90%" }}
+                            ></div>
+                          </div>
+                          <span className="font-small ml-5 text-muted">
+                            {" "}
+                            (4.0)
+                          </span>
+                        </div>
+                      </td>
+                      <td className="price" data-title="Price">
+                        <h3 className="text-brand">$3.17</h3>
+                      </td>
+                      <td
+                        className="text-center detail-info"
+                        data-title="Stock"
+                      >
+                        <span className="stock-status in-stock mb-0">
+                          {" "}
+                          In Stock{" "}
+                        </span>
+                      </td>
+                      <td className="text-right" data-title="Cart">
+                        <button className="btn btn-sm">Add to cart</button>
+                      </td>
+                      <td className="action text-center" data-title="Remove">
+                        <Link to="#" className="text-body">
+                          <i className="fi-rs-trash"></i>
+                        </Link>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -883,6 +1003,78 @@ function Homepage() {
                     </form>
                   </div>
                   <img src="assets/imgs/banner/banner-9.png" alt="newsletter" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="featured section-padding">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                <div className="banner-left-icon d-flex align-items-center">
+                  <div className="banner-icon">
+                    <img src="assets/imgs/theme/icons/icon-1.svg" alt="" />
+                  </div>
+                  <div className="banner-text">
+                    <h3 className="icon-box-title">Best prices & offers</h3>
+                    <p>Orders $50 or more</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div className="banner-left-icon d-flex align-items-center">
+                  <div className="banner-icon">
+                    <img src="assets/imgs/theme/icons/icon-2.svg" alt="" />
+                  </div>
+                  <div className="banner-text">
+                    <h3 className="icon-box-title">Free delivery</h3>
+                    <p>24/7 amazing services</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div className="banner-left-icon d-flex align-items-center">
+                  <div className="banner-icon">
+                    <img src="assets/imgs/theme/icons/icon-3.svg" alt="" />
+                  </div>
+                  <div className="banner-text">
+                    <h3 className="icon-box-title">Great daily deal</h3>
+                    <p>When you sign up</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div className="banner-left-icon d-flex align-items-center">
+                  <div className="banner-icon">
+                    <img src="assets/imgs/theme/icons/icon-4.svg" alt="" />
+                  </div>
+                  <div className="banner-text">
+                    <h3 className="icon-box-title">Wide assortment</h3>
+                    <p>Mega Discounts</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div className="banner-left-icon d-flex align-items-center">
+                  <div className="banner-icon">
+                    <img src="assets/imgs/theme/icons/icon-5.svg" alt="" />
+                  </div>
+                  <div className="banner-text">
+                    <h3 className="icon-box-title">Easy returns</h3>
+                    <p>Within 30 days</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-none">
+                <div className="banner-left-icon d-flex align-items-center">
+                  <div className="banner-icon">
+                    <img src="assets/imgs/theme/icons/icon-6.svg" alt="" />
+                  </div>
+                  <div className="banner-text">
+                    <h3 className="icon-box-title">Safe delivery</h3>
+                    <p>Within 30 days</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1092,10 +1284,7 @@ function Homepage() {
             </div>
           </div>
         </section>
-        <div
-          className="container pb-30 wow animate__animated animate__fadeInUp"
-          data-wow-delay="0"
-        >
+        <div className="container pb-30">
           <div className="row align-items-center">
             <div className="col-12 mb-30">
               <div className="footer-bottom"></div>
@@ -1115,15 +1304,6 @@ function Homepage() {
                 />
                 <p>
                   1900 - 6666<span>Working 8:00 - 22:00</span>
-                </p>
-              </div>
-              <div className="hotline d-lg-inline-flex">
-                <img
-                  src="assets/imgs/theme/icons/phone-call.svg"
-                  alt="hotline"
-                />
-                <p>
-                  1900 - 8888<span>24/7 Support Center</span>
                 </p>
               </div>
             </div>
@@ -1182,4 +1362,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Wishlist;

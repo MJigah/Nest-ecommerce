@@ -40,14 +40,27 @@ function Dashboard() {
         <div className="header-middle header-middle-ptb-1 d-none sticky-bar d-lg-block">
           <div className="container">
             <div className="header-wrap">
-              <div className="logo logo-width-1 col-xl-7 col-lg-6">
+              <div className="logo logo-width-1 col-xl-6 col-lg-6">
                 <Link to="/">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
-              <div className="header-right col-xl-3 col-lg-3">
+              <div className="header-right col-xl-4 col-lg-3">
                 <div className="header-action-right">
                   <div className="header-action-2">
+                    <div className="header-action-icon-2">
+                      <Link to="/wishlist">
+                        <img
+                          className="svgInject"
+                          alt="Nest"
+                          src="assets/imgs/theme/icons/icon-heart.svg"
+                        />
+                        <span className="pro-count blue">6</span>
+                      </Link>
+                      <Link to="/wishlist">
+                        <span className="lable">Wishlist</span>
+                      </Link>
+                    </div>
                     <div className="header-action-icon-2">
                       <Link className="mini-cart-icon" to="/cart">
                         <img
@@ -63,7 +76,7 @@ function Dashboard() {
                         <ul>
                           <li>
                             <div className="shopping-cart-img">
-                              <Link to="/product">
+                              <Link to="shop-product-right.html">
                                 <img
                                   alt="Nest"
                                   src="assets/imgs/shop/thumbnail-3.jpg"
@@ -72,7 +85,7 @@ function Dashboard() {
                             </div>
                             <div className="shopping-cart-title">
                               <h4>
-                                <Link to="/product">
+                                <Link to="shop-product-right.html">
                                   Daisy Casual Bag
                                 </Link>
                               </h4>
@@ -88,7 +101,7 @@ function Dashboard() {
                           </li>
                           <li>
                             <div className="shopping-cart-img">
-                              <Link to="/product">
+                              <Link to="shop-product-right.html">
                                 <img
                                   alt="Nest"
                                   src="assets/imgs/shop/thumbnail-2.jpg"
@@ -97,7 +110,7 @@ function Dashboard() {
                             </div>
                             <div className="shopping-cart-title">
                               <h4>
-                                <Link to="/product">
+                                <Link to="shop-product-right.html">
                                   Corduroy Shirts
                                 </Link>
                               </h4>
@@ -128,42 +141,42 @@ function Dashboard() {
                       </div>
                     </div>
                     <div className="header-action-icon-2">
-                      <Link to="/">
+                      <Link to="/dashboard">
                         <img
                           className="svgInject"
                           alt="Nest"
                           src="assets/imgs/theme/icons/icon-user.svg"
                         />
                       </Link>
-                      <Link to="/">
+                      <Link to="/dashboard">
                         <span className="lable ml-0">Account</span>
                       </Link>
                       <div className="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                         <ul>
                           <li>
-                            <Link to="#">
+                            <Link to="/dashboard">
                               <i className="fi fi-rs-user mr-10"></i>My Account
                             </Link>
                           </li>
                           <li>
-                            <Link to="#">
+                            <Link to="/dashboard">
                               <i className="fi fi-rs-location-alt mr-10"></i>
                               Order Tracking
                             </Link>
                           </li>
                           <li>
-                            <Link to="#">
+                            <Link to="/dashboard">
                               <i className="fi fi-rs-label mr-10"></i>My Voucher
                             </Link>
                           </li>
                           <li>
-                            <Link to="#">
+                            <Link to="/">
                               <i className="fi fi-rs-heart mr-10"></i>My
                               Wishlist
                             </Link>
                           </li>
                           <li>
-                            <Link to="#">
+                            <Link to="/dashboard">
                               <i className="fi fi-rs-settings-sliders mr-10"></i>
                               Setting
                             </Link>
@@ -293,7 +306,7 @@ function Dashboard() {
                         <Link to="#">Single Product</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/product">
+                            <Link to="shop-product-right.html">
                               Product – Right Sidebar
                             </Link>
                           </li>
@@ -318,7 +331,7 @@ function Dashboard() {
                         <Link to="shop-filter.html">Shop – Filter</Link>
                       </li>
                       <li>
-                        <Link to="#">Shop – Wishlist</Link>
+                        <Link to="/wishlist">Shop – Wishlist</Link>
                       </li>
                       <li>
                         <Link to="/cart">Shop – Cart</Link>
@@ -364,10 +377,12 @@ function Dashboard() {
                         <Link to="vendors-list.html">Vendors List</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-1.html">Vendor Details 01</Link>
+                        <Link to="/vendor">Vendor Details 01</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-2.html">Vendor Details 02</Link>
+                        <Link to="vendor-details-2.html">
+                          Vendor Details 02
+                        </Link>
                       </li>
                       <li>
                         <Link to="vendor-dashboard.html">Vendor Dashboard</Link>
@@ -384,20 +399,22 @@ function Dashboard() {
                         <Link to="#">Women's Fashion</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/product">Dresses</Link>
+                            <Link to="shop-product-right.html">Dresses</Link>
                           </li>
                           <li>
-                            <Link to="/product">
+                            <Link to="shop-product-right.html">
                               Blouses & Shirts
                             </Link>
                           </li>
                           <li>
-                            <Link to="/product">
+                            <Link to="shop-product-right.html">
                               Hoodies & Sweatshirts
                             </Link>
                           </li>
                           <li>
-                            <Link to="/product">Women's Sets</Link>
+                            <Link to="shop-product-right.html">
+                              Women's Sets
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -405,15 +422,15 @@ function Dashboard() {
                         <Link to="#">Men's Fashion</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/product">Jackets</Link>
+                            <Link to="shop-product-right.html">Jackets</Link>
                           </li>
                           <li>
-                            <Link to="/product">
+                            <Link to="shop-product-right.html">
                               Casual Faux Leather
                             </Link>
                           </li>
                           <li>
-                            <Link to="/product">
+                            <Link to="shop-product-right.html">
                               Genuine Leather
                             </Link>
                           </li>
@@ -423,23 +440,25 @@ function Dashboard() {
                         <Link to="#">Technology</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/product">Gaming Laptops</Link>
+                            <Link to="shop-product-right.html">
+                              Gaming Laptops
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/product">
+                            <Link to="shop-product-right.html">
                               Ultraslim Laptops
                             </Link>
                           </li>
                           <li>
-                            <Link to="/product">Tablets</Link>
+                            <Link to="shop-product-right.html">Tablets</Link>
                           </li>
                           <li>
-                            <Link to="/product">
+                            <Link to="shop-product-right.html">
                               Laptop Accessories
                             </Link>
                           </li>
                           <li>
-                            <Link to="/product">
+                            <Link to="shop-product-right.html">
                               Tablet Accessories
                             </Link>
                           </li>
@@ -451,13 +470,19 @@ function Dashboard() {
                     <Link to="blog-category-fullwidth.html">Blog</Link>
                     <ul className="dropdown">
                       <li>
-                        <Link to="blog-category-grid.html">Blog Category Grid</Link>
+                        <Link to="blog-category-grid.html">
+                          Blog Category Grid
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-list.html">Blog Category List</Link>
+                        <Link to="blog-category-list.html">
+                          Blog Category List
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-big.html">Blog Category Big</Link>
+                        <Link to="blog-category-big.html">
+                          Blog Category Big
+                        </Link>
                       </li>
                       <li>
                         <Link to="blog-category-fullwidth.html">
@@ -474,7 +499,9 @@ function Dashboard() {
                             <Link to="blog-post-right.html">Right Sidebar</Link>
                           </li>
                           <li>
-                            <Link to="blog-post-fullwidth.html">No Sidebar</Link>
+                            <Link to="blog-post-fullwidth.html">
+                              No Sidebar
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -490,7 +517,7 @@ function Dashboard() {
                         <Link to="page-contact.html">Contact</Link>
                       </li>
                       <li>
-                        <Link to="/">My Account</Link>
+                        <Link to="/dashboard">My Account</Link>
                       </li>
                       <li>
                         <Link to="/login">Login</Link>
@@ -499,10 +526,14 @@ function Dashboard() {
                         <Link to="page-register.html">Register</Link>
                       </li>
                       <li>
-                        <Link to="page-purchase-guide.html">Purchase Guide</Link>
+                        <Link to="page-purchase-guide.html">
+                          Purchase Guide
+                        </Link>
                       </li>
                       <li>
-                        <Link to="page-privacy-policy.html">Privacy Policy</Link>
+                        <Link to="page-privacy-policy.html">
+                          Privacy Policy
+                        </Link>
                       </li>
                       <li>
                         <Link to="page-terms.html">Terms of Service</Link>
@@ -536,17 +567,17 @@ function Dashboard() {
             <div className="mobile-header-info-wrap">
               <div className="single-mobile-header-info">
                 <Link to="page-contact.html">
-                  <i className="fi-rs-marker"></i> Our location{" "}
+                  <i className="fi-rs-marker"></i> Our location
                 </Link>
               </div>
               <div className="single-mobile-header-info">
                 <Link to="/login">
-                  <i className="fi-rs-user"></i>Log In / Sign Up{" "}
+                  <i className="fi-rs-user"></i>Log In / Sign Up
                 </Link>
               </div>
               <div className="single-mobile-header-info">
                 <Link to="#">
-                  <i className="fi-rs-headphones"></i>(+01) - 2345 - 6789{" "}
+                  <i className="fi-rs-headphones"></i>(+01) - 2345 - 6789
                 </Link>
               </div>
             </div>

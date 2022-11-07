@@ -228,14 +228,27 @@ function Product() {
         <div className="header-middle header-middle-ptb-1 d-none sticky-bar d-lg-block">
           <div className="container">
             <div className="header-wrap">
-              <div className="logo logo-width-1 col-xl-7 col-lg-6">
+              <div className="logo logo-width-1 col-xl-6 col-lg-6">
                 <Link to="/">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
-              <div className="header-right col-xl-3 col-lg-3">
+              <div className="header-right col-xl-4 col-lg-3">
                 <div className="header-action-right">
                   <div className="header-action-2">
+                    <div className="header-action-icon-2">
+                      <Link to="/wishlist">
+                        <img
+                          className="svgInject"
+                          alt="Nest"
+                          src="assets/imgs/theme/icons/icon-heart.svg"
+                        />
+                        <span className="pro-count blue">6</span>
+                      </Link>
+                      <Link to="/wishlist">
+                        <span className="lable">Wishlist</span>
+                      </Link>
+                    </div>
                     <div className="header-action-icon-2">
                       <Link className="mini-cart-icon" to="/cart">
                         <img
@@ -251,7 +264,7 @@ function Product() {
                         <ul>
                           <li>
                             <div className="shopping-cart-img">
-                              <Link to="/">
+                              <Link to="shop-product-right.html">
                                 <img
                                   alt="Nest"
                                   src="assets/imgs/shop/thumbnail-3.jpg"
@@ -260,7 +273,9 @@ function Product() {
                             </div>
                             <div className="shopping-cart-title">
                               <h4>
-                                <Link to="/">Daisy Casual Bag</Link>
+                                <Link to="shop-product-right.html">
+                                  Daisy Casual Bag
+                                </Link>
                               </h4>
                               <h4>
                                 <span>1 × </span>$800.00
@@ -274,7 +289,7 @@ function Product() {
                           </li>
                           <li>
                             <div className="shopping-cart-img">
-                              <Link to="/">
+                              <Link to="shop-product-right.html">
                                 <img
                                   alt="Nest"
                                   src="assets/imgs/shop/thumbnail-2.jpg"
@@ -283,7 +298,9 @@ function Product() {
                             </div>
                             <div className="shopping-cart-title">
                               <h4>
-                                <Link to="/">Corduroy Shirts</Link>
+                                <Link to="shop-product-right.html">
+                                  Corduroy Shirts
+                                </Link>
                               </h4>
                               <h4>
                                 <span>1 × </span>$3200.00
@@ -306,7 +323,7 @@ function Product() {
                             <Link to="/cart" className="outline">
                               View cart
                             </Link>
-                            <Link to="/checkout">Checkout</Link>
+                            <Link to="shop-checkout.html">Checkout</Link>
                           </div>
                         </div>
                       </div>
@@ -477,7 +494,9 @@ function Product() {
                         <Link to="#">Single Product</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/">Product – Right Sidebar</Link>
+                            <Link to="shop-product-right.html">
+                              Product – Right Sidebar
+                            </Link>
                           </li>
                           <li>
                             <Link to="shop-product-left.html">
@@ -500,16 +519,16 @@ function Product() {
                         <Link to="shop-filter.html">Shop – Filter</Link>
                       </li>
                       <li>
-                        <Link to="/">Shop – Wishlist</Link>
+                        <Link to="/wishlist">Shop – Wishlist</Link>
                       </li>
                       <li>
                         <Link to="/cart">Shop – Cart</Link>
                       </li>
                       <li>
-                        <Link to="/checkout">Shop – Checkout</Link>
+                        <Link to="shop-checkout.html">Shop – Checkout</Link>
                       </li>
                       <li>
-                        <Link to="/cart">Shop – Compare</Link>
+                        <Link to="shop-compare.html">Shop – Compare</Link>
                       </li>
                       <li className="menu-item-has-children">
                         <Link to="#">Shop Invoice</Link>
@@ -568,16 +587,22 @@ function Product() {
                         <Link to="#">Women's Fashion</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/">Dresses</Link>
+                            <Link to="shop-product-right.html">Dresses</Link>
                           </li>
                           <li>
-                            <Link to="/">Blouses & Shirts</Link>
+                            <Link to="shop-product-right.html">
+                              Blouses & Shirts
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/">Hoodies & Sweatshirts</Link>
+                            <Link to="shop-product-right.html">
+                              Hoodies & Sweatshirts
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/">Women's Sets</Link>
+                            <Link to="shop-product-right.html">
+                              Women's Sets
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -585,13 +610,17 @@ function Product() {
                         <Link to="#">Men's Fashion</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/">Jackets</Link>
+                            <Link to="shop-product-right.html">Jackets</Link>
                           </li>
                           <li>
-                            <Link to="/">Casual Faux Leather</Link>
+                            <Link to="shop-product-right.html">
+                              Casual Faux Leather
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/">Genuine Leather</Link>
+                            <Link to="shop-product-right.html">
+                              Genuine Leather
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -599,19 +628,27 @@ function Product() {
                         <Link to="#">Technology</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="/">Gaming Laptops</Link>
+                            <Link to="shop-product-right.html">
+                              Gaming Laptops
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/">Ultraslim Laptops</Link>
+                            <Link to="shop-product-right.html">
+                              Ultraslim Laptops
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/">Tablets</Link>
+                            <Link to="shop-product-right.html">Tablets</Link>
                           </li>
                           <li>
-                            <Link to="/">Laptop Accessories</Link>
+                            <Link to="shop-product-right.html">
+                              Laptop Accessories
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/">Tablet Accessories</Link>
+                            <Link to="shop-product-right.html">
+                              Tablet Accessories
+                            </Link>
                           </li>
                         </ul>
                       </li>

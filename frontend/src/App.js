@@ -11,6 +11,7 @@ import Checkout from "./pages/Checkout";
 import Product from "./pages/Product";
 import { useEffect } from "react";
 import { appendScript } from "./utils/appendScript";
+import Wishlist from "./pages/Wishlist";
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/product" element={<Product />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
             <Route path="/checkout" element={<Checkout />}></Route>
+            <Route path="/wishlist" element={<Wishlist />}></Route>
           </Routes>
         </div>
       </Router>

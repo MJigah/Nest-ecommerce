@@ -40,14 +40,27 @@ function Cart() {
         <div className="header-middle header-middle-ptb-1 d-none sticky-bar d-lg-block">
           <div className="container">
             <div className="header-wrap">
-              <div className="logo logo-width-1 col-xl-7 col-lg-6">
+              <div className="logo logo-width-1 col-xl-6 col-lg-6">
                 <Link to="/">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
-              <div className="header-right col-xl-3 col-lg-3">
+              <div className="header-right col-xl-4 col-lg-3">
                 <div className="header-action-right">
                   <div className="header-action-2">
+                    <div className="header-action-icon-2">
+                      <Link to="/wishlist">
+                        <img
+                          className="svgInject"
+                          alt="Nest"
+                          src="assets/imgs/theme/icons/icon-heart.svg"
+                        />
+                        <span className="pro-count blue">6</span>
+                      </Link>
+                      <Link to="/wishlist">
+                        <span className="lable">Wishlist</span>
+                      </Link>
+                    </div>
                     <div className="header-action-icon-2">
                       <Link className="mini-cart-icon" to="/cart">
                         <img
@@ -122,7 +135,7 @@ function Cart() {
                             <Link to="/cart" className="outline">
                               View cart
                             </Link>
-                            <Link to="/checkout">Checkout</Link>
+                            <Link to="shop-checkout.html">Checkout</Link>
                           </div>
                         </div>
                       </div>
@@ -318,13 +331,13 @@ function Cart() {
                         <Link to="shop-filter.html">Shop – Filter</Link>
                       </li>
                       <li>
-                        <Link to="/">Shop – Wishlist</Link>
+                        <Link to="/wishlist">Shop – Wishlist</Link>
                       </li>
                       <li>
                         <Link to="/cart">Shop – Cart</Link>
                       </li>
                       <li>
-                        <Link to="/checkout">Shop – Checkout</Link>
+                        <Link to="shop-checkout.html">Shop – Checkout</Link>
                       </li>
                       <li>
                         <Link to="shop-compare.html">Shop – Compare</Link>
@@ -364,10 +377,12 @@ function Cart() {
                         <Link to="vendors-list.html">Vendors List</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-1.html">Vendor Details 01</Link>
+                        <Link to="/vendor">Vendor Details 01</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-2.html">Vendor Details 02</Link>
+                        <Link to="vendor-details-2.html">
+                          Vendor Details 02
+                        </Link>
                       </li>
                       <li>
                         <Link to="vendor-dashboard.html">Vendor Dashboard</Link>
@@ -397,7 +412,9 @@ function Cart() {
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">Women's Sets</Link>
+                            <Link to="shop-product-right.html">
+                              Women's Sets
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -423,7 +440,9 @@ function Cart() {
                         <Link to="#">Technology</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="shop-product-right.html">Gaming Laptops</Link>
+                            <Link to="shop-product-right.html">
+                              Gaming Laptops
+                            </Link>
                           </li>
                           <li>
                             <Link to="shop-product-right.html">
@@ -451,13 +470,19 @@ function Cart() {
                     <Link to="blog-category-fullwidth.html">Blog</Link>
                     <ul className="dropdown">
                       <li>
-                        <Link to="blog-category-grid.html">Blog Category Grid</Link>
+                        <Link to="blog-category-grid.html">
+                          Blog Category Grid
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-list.html">Blog Category List</Link>
+                        <Link to="blog-category-list.html">
+                          Blog Category List
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-big.html">Blog Category Big</Link>
+                        <Link to="blog-category-big.html">
+                          Blog Category Big
+                        </Link>
                       </li>
                       <li>
                         <Link to="blog-category-fullwidth.html">
@@ -474,7 +499,9 @@ function Cart() {
                             <Link to="blog-post-right.html">Right Sidebar</Link>
                           </li>
                           <li>
-                            <Link to="blog-post-fullwidth.html">No Sidebar</Link>
+                            <Link to="blog-post-fullwidth.html">
+                              No Sidebar
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -499,10 +526,14 @@ function Cart() {
                         <Link to="page-register.html">Register</Link>
                       </li>
                       <li>
-                        <Link to="page-purchase-guide.html">Purchase Guide</Link>
+                        <Link to="page-purchase-guide.html">
+                          Purchase Guide
+                        </Link>
                       </li>
                       <li>
-                        <Link to="page-privacy-policy.html">Privacy Policy</Link>
+                        <Link to="page-privacy-policy.html">
+                          Privacy Policy
+                        </Link>
                       </li>
                       <li>
                         <Link to="page-terms.html">Terms of Service</Link>
@@ -988,33 +1019,38 @@ function Cart() {
         </div>
       </main>
       <footer className="main">
-      <section className="newsletter mb-15 wow animate__animated animate__fadeIn">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="position-relative newsletter-inner">
-                                <div className="newsletter-content">
-                                    <h2 className="mb-20">
-                                        Stay home & get your daily <br />
-                                        needs from our shop
-                                    </h2>
-                                    <p className="mb-45">Start You'r Daily Shopping with <span className="text-brand">Nest Mart</span></p>
-                                    <form className="form-subcriber d-flex">
-                                        <input type="email" placeholder="Your emaill address" />
-                                        <button className="btn" type="submit">Subscribe</button>
-                                    </form>
-                                </div>
-                                <img src="assets/imgs/banner/banner-9.png" alt="newsletter" />
-                            </div>
-                        </div>
-                    </div>
+        <section className="newsletter mb-15 wow animate__animated animate__fadeIn">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="position-relative newsletter-inner">
+                  <div className="newsletter-content">
+                    <h2 className="mb-20">
+                      Stay home & get your daily <br />
+                      needs from our shop
+                    </h2>
+                    <p className="mb-45">
+                      Start You'r Daily Shopping with{" "}
+                      <span className="text-brand">Nest Mart</span>
+                    </p>
+                    <form className="form-subcriber d-flex">
+                      <input type="email" placeholder="Your emaill address" />
+                      <button className="btn" type="submit">
+                        Subscribe
+                      </button>
+                    </form>
+                  </div>
+                  <img src="assets/imgs/banner/banner-9.png" alt="newsletter" />
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="featured section-padding">
           <div className="container">
             <div className="row">
               <div className="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
-                <div className="banner-left-icon d-flex align-items-center wow fadeIn  animated">
+                <div className="banner-left-icon d-flex align-items-center">
                   <div className="banner-icon">
                     <img src="assets/imgs/theme/icons/icon-1.svg" alt="" />
                   </div>
@@ -1025,7 +1061,7 @@ function Cart() {
                 </div>
               </div>
               <div className="col-lg-1-5 col-md-4 col-12 col-sm-6">
-                <div className="banner-left-icon d-flex align-items-center wow fadeIn  animated">
+                <div className="banner-left-icon d-flex align-items-center">
                   <div className="banner-icon">
                     <img src="assets/imgs/theme/icons/icon-2.svg" alt="" />
                   </div>
@@ -1036,7 +1072,7 @@ function Cart() {
                 </div>
               </div>
               <div className="col-lg-1-5 col-md-4 col-12 col-sm-6">
-                <div className="banner-left-icon d-flex align-items-center wow fadeIn  animated">
+                <div className="banner-left-icon d-flex align-items-center">
                   <div className="banner-icon">
                     <img src="assets/imgs/theme/icons/icon-3.svg" alt="" />
                   </div>
@@ -1047,7 +1083,7 @@ function Cart() {
                 </div>
               </div>
               <div className="col-lg-1-5 col-md-4 col-12 col-sm-6">
-                <div className="banner-left-icon d-flex align-items-center wow fadeIn  animated">
+                <div className="banner-left-icon d-flex align-items-center">
                   <div className="banner-icon">
                     <img src="assets/imgs/theme/icons/icon-4.svg" alt="" />
                   </div>
@@ -1058,7 +1094,7 @@ function Cart() {
                 </div>
               </div>
               <div className="col-lg-1-5 col-md-4 col-12 col-sm-6">
-                <div className="banner-left-icon d-flex align-items-center wow fadeIn  animated">
+                <div className="banner-left-icon d-flex align-items-center">
                   <div className="banner-icon">
                     <img src="assets/imgs/theme/icons/icon-5.svg" alt="" />
                   </div>
@@ -1069,7 +1105,7 @@ function Cart() {
                 </div>
               </div>
               <div className="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-none">
-                <div className="banner-left-icon d-flex align-items-center wow fadeIn  animated">
+                <div className="banner-left-icon d-flex align-items-center">
                   <div className="banner-icon">
                     <img src="assets/imgs/theme/icons/icon-6.svg" alt="" />
                   </div>
@@ -1294,12 +1330,11 @@ function Cart() {
             <div className="col-xl-4 col-lg-6 col-md-6">
               <p className="font-sm mb-0">
                 &copy; 2021, <strong className="text-brand">Nest</strong> - HTML
-                Ecommerce Template
-                <br />
+                Ecommerce Template <br />
                 All rights reserved
               </p>
             </div>
-            <div className="col-xl-4  col-lg-6 text-center d-none d-xl-block">
+            <div className="col-xl-4 col-lg-6 text-center d-none d-xl-block">
               <div className="hotline d-lg-inline-flex mr-30">
                 <img
                   src="assets/imgs/theme/icons/phone-call.svg"
@@ -1309,19 +1344,10 @@ function Cart() {
                   1900 - 6666<span>Working 8:00 - 22:00</span>
                 </p>
               </div>
-              <div className="hotline d-lg-inline-flex">
-                <img
-                  src="assets/imgs/theme/icons/phone-call.svg"
-                  alt="hotline"
-                />
-                <p>
-                  1900 - 8888<span>24/7 Support Center</span>
-                </p>
-              </div>
             </div>
-            <div className="col-xl-4  col-lg-6  col-md-6 text-end d-none d-md-block">
+            <div className="col-xl-4 col-lg-6 col-md-6 text-end d-none d-md-block">
               <div className="mobile-social-icon">
-                <h6>Follow Us </h6>
+                <h6>Follow Us</h6>
                 <Link to="#">
                   <img
                     src="assets/imgs/theme/icons/icon-facebook-white.svg"

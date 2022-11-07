@@ -11,7 +11,7 @@ function Login() {
       <header className="header-area header-style-1 header-height-2">
         <div
           className="header-top header-top-ptb-1 d-none d-lg-block header-bottom-bg-color"
-          style={{backgroundColor: "#3bb77e"}}
+          style={{ backgroundColor: "#3bb77e" }}
         >
           <div className="container">
             <div className="row align-items-center">
@@ -23,7 +23,7 @@ function Login() {
               <div className="col-xl-6 col-lg-4">
                 <div className="text-center">
                   <div className="d-inline-block">
-                    <ul style={{color: "#fff"}}>
+                    <ul style={{ color: "#fff" }}>
                       <li>Contact Us: +234 000 000 000</li>
                     </ul>
                   </div>
@@ -40,14 +40,27 @@ function Login() {
         <div className="header-middle header-middle-ptb-1 d-none sticky-bar d-lg-block">
           <div className="container">
             <div className="header-wrap">
-              <div className="logo logo-width-1 col-xl-7 col-lg-6">
+              <div className="logo logo-width-1 col-xl-6 col-lg-6">
                 <Link to="/">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
-              <div className="header-right col-xl-3 col-lg-3">
+              <div className="header-right col-xl-4 col-lg-3">
                 <div className="header-action-right">
                   <div className="header-action-2">
+                    <div className="header-action-icon-2">
+                      <Link to="/wishlist">
+                        <img
+                          className="svgInject"
+                          alt="Nest"
+                          src="assets/imgs/theme/icons/icon-heart.svg"
+                        />
+                        <span className="pro-count blue">6</span>
+                      </Link>
+                      <Link to="/wishlist">
+                        <span className="lable">Wishlist</span>
+                      </Link>
+                    </div>
                     <div className="header-action-icon-2">
                       <Link className="mini-cart-icon" to="/cart">
                         <img
@@ -147,8 +160,8 @@ function Login() {
                           </li>
                           <li>
                             <Link to="/dashboard">
-                              <i className="fi fi-rs-location-alt mr-10"></i>Order
-                              Tracking
+                              <i className="fi fi-rs-location-alt mr-10"></i>
+                              Order Tracking
                             </Link>
                           </li>
                           <li>
@@ -157,8 +170,9 @@ function Login() {
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-wishlist.html">
-                              <i className="fi fi-rs-heart mr-10"></i>My Wishlist
+                            <Link to="/">
+                              <i className="fi fi-rs-heart mr-10"></i>My
+                              Wishlist
                             </Link>
                           </li>
                           <li>
@@ -169,7 +183,8 @@ function Login() {
                           </li>
                           <li>
                             <Link to="/login">
-                              <i className="fi fi-rs-sign-out mr-10"></i>Sign out
+                              <i className="fi fi-rs-sign-out mr-10"></i>Sign
+                              out
                             </Link>
                           </li>
                         </ul>
@@ -194,7 +209,7 @@ function Login() {
           <div className="container">
             <div className="header-wrap header-space-between position-relative">
               <div className="logo logo-width-1 d-block d-lg-none">
-                <Link to="/">
+                <Link to="index-2.html">
                   <img src="assets/imgs/theme/logo.svg" alt="logo" />
                 </Link>
               </div>
@@ -214,7 +229,7 @@ function Login() {
         <div className="mobile-header-wrapper-inner">
           <div className="mobile-header-top">
             <div className="mobile-header-logo">
-              <Link to="/">
+              <Link to="index-2.html">
                 <img src="assets/imgs/theme/logo.svg" alt="logo" />
               </Link>
             </div>
@@ -239,25 +254,25 @@ function Login() {
               <nav>
                 <ul className="mobile-menu font-heading">
                   <li className="menu-item-has-children">
-                    <Link to="/">Home</Link>
+                    <Link to="index-2.html">Home</Link>
                     <ul className="dropdown">
                       <li>
-                        <Link to="/">Home 1</Link>
+                        <Link to="index-2.html">Home 1</Link>
                       </li>
                       <li>
-                        <Link to="/">Home 2</Link>
+                        <Link to="index-3.html">Home 2</Link>
                       </li>
                       <li>
-                        <Link to="/">Home 3</Link>
+                        <Link to="index-4.html">Home 3</Link>
                       </li>
                       <li>
-                        <Link to="/">Home 4</Link>
+                        <Link to="index-5.html">Home 4</Link>
                       </li>
                       <li>
                         <Link to="/">Home 5</Link>
                       </li>
                       <li>
-                        <Link to="/">Home 6</Link>
+                        <Link to="index-7.html">Home 6</Link>
                       </li>
                     </ul>
                   </li>
@@ -316,7 +331,7 @@ function Login() {
                         <Link to="shop-filter.html">Shop – Filter</Link>
                       </li>
                       <li>
-                        <Link to="shop-wishlist.html">Shop – Wishlist</Link>
+                        <Link to="/wishlist">Shop – Wishlist</Link>
                       </li>
                       <li>
                         <Link to="/cart">Shop – Cart</Link>
@@ -362,10 +377,12 @@ function Login() {
                         <Link to="vendors-list.html">Vendors List</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-1.html">Vendor Details 01</Link>
+                        <Link to="/vendor">Vendor Details 01</Link>
                       </li>
                       <li>
-                        <Link to="vendor-details-2.html">Vendor Details 02</Link>
+                        <Link to="vendor-details-2.html">
+                          Vendor Details 02
+                        </Link>
                       </li>
                       <li>
                         <Link to="vendor-dashboard.html">Vendor Dashboard</Link>
@@ -395,7 +412,9 @@ function Login() {
                             </Link>
                           </li>
                           <li>
-                            <Link to="shop-product-right.html">Women's Sets</Link>
+                            <Link to="shop-product-right.html">
+                              Women's Sets
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -421,7 +440,9 @@ function Login() {
                         <Link to="#">Technology</Link>
                         <ul className="dropdown">
                           <li>
-                            <Link to="shop-product-right.html">Gaming Laptops</Link>
+                            <Link to="shop-product-right.html">
+                              Gaming Laptops
+                            </Link>
                           </li>
                           <li>
                             <Link to="shop-product-right.html">
@@ -449,13 +470,19 @@ function Login() {
                     <Link to="blog-category-fullwidth.html">Blog</Link>
                     <ul className="dropdown">
                       <li>
-                        <Link to="blog-category-grid.html">Blog Category Grid</Link>
+                        <Link to="blog-category-grid.html">
+                          Blog Category Grid
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-list.html">Blog Category List</Link>
+                        <Link to="blog-category-list.html">
+                          Blog Category List
+                        </Link>
                       </li>
                       <li>
-                        <Link to="blog-category-big.html">Blog Category Big</Link>
+                        <Link to="blog-category-big.html">
+                          Blog Category Big
+                        </Link>
                       </li>
                       <li>
                         <Link to="blog-category-fullwidth.html">
@@ -472,7 +499,9 @@ function Login() {
                             <Link to="blog-post-right.html">Right Sidebar</Link>
                           </li>
                           <li>
-                            <Link to="blog-post-fullwidth.html">No Sidebar</Link>
+                            <Link to="blog-post-fullwidth.html">
+                              No Sidebar
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -491,16 +520,20 @@ function Login() {
                         <Link to="/dashboard">My Account</Link>
                       </li>
                       <li>
-                        <Link to="/">Login</Link>
+                        <Link to="/login">Login</Link>
                       </li>
                       <li>
                         <Link to="page-register.html">Register</Link>
                       </li>
                       <li>
-                        <Link to="page-purchase-guide.html">Purchase Guide</Link>
+                        <Link to="page-purchase-guide.html">
+                          Purchase Guide
+                        </Link>
                       </li>
                       <li>
-                        <Link to="page-privacy-policy.html">Privacy Policy</Link>
+                        <Link to="page-privacy-policy.html">
+                          Privacy Policy
+                        </Link>
                       </li>
                       <li>
                         <Link to="page-terms.html">Terms of Service</Link>
@@ -534,17 +567,17 @@ function Login() {
             <div className="mobile-header-info-wrap">
               <div className="single-mobile-header-info">
                 <Link to="page-contact.html">
-                  <i className="fi-rs-marker"></i> Our location{" "}
+                  <i className="fi-rs-marker"></i> Our location
                 </Link>
               </div>
               <div className="single-mobile-header-info">
-                <Link to="/">
-                  <i className="fi-rs-user"></i>Log In / Sign Up{" "}
+                <Link to="/login">
+                  <i className="fi-rs-user"></i>Log In / Sign Up
                 </Link>
               </div>
               <div className="single-mobile-header-info">
                 <Link to="#">
-                  <i className="fi-rs-headphones"></i>(+01) - 2345 - 6789{" "}
+                  <i className="fi-rs-headphones"></i>(+01) - 2345 - 6789
                 </Link>
               </div>
             </div>
