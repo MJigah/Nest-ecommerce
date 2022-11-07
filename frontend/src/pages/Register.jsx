@@ -779,20 +779,20 @@ function Register() {
         </div>
       </main>
       <footer className="main">
-      <section class="newsletter mb-15 wow animate__animated animate__fadeIn">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="position-relative newsletter-inner">
-                                <div class="newsletter-content">
-                                    <h2 class="mb-20">
+      <section className="newsletter mb-15 wow animate__animated animate__fadeIn">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="position-relative newsletter-inner">
+                                <div className="newsletter-content">
+                                    <h2 className="mb-20">
                                         Stay home & get your daily <br />
                                         needs from our shop
                                     </h2>
-                                    <p class="mb-45">Start You'r Daily Shopping with <span class="text-brand">Nest Mart</span></p>
-                                    <form class="form-subcriber d-flex">
+                                    <p className="mb-45">Start You'r Daily Shopping with <span className="text-brand">Nest Mart</span></p>
+                                    <form className="form-subcriber d-flex">
                                         <input type="email" placeholder="Your emaill address" />
-                                        <button class="btn" type="submit">Subscribe</button>
+                                        <button className="btn" type="submit">Subscribe</button>
                                     </form>
                                 </div>
                                 <img src="assets/imgs/banner/banner-9.png" alt="newsletter" />
@@ -802,39 +802,39 @@ function Register() {
                 </div>
             </section>
         <section className="featured section-padding"></section>
-        <section className="section-padding footer-mid">
+        <section className="section-padding footer-mid" style={{textAlign: "center"}}>
           <div className="container pt-15 pb-20">
             <div className="row">
               <div className="col">
-                <div className="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0">
+                <div
+                  className="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0 wow animate__animated animate__fadeInUp"
+                  data-wow-delay="0"
+                >
                   <div className="logo mb-30">
-                    <Link to="/" className="mb-15">
+                    <Link to="#" className="mb-15">
                       <img src="assets/imgs/theme/logo.svg" alt="logo" />
                     </Link>
-                    <p className="font-lg text-heading">
-                      Awesome grocery store website template
-                    </p>
                   </div>
                   <ul className="contact-infor">
-                    <li>
+                    {/* <li>
                       <img
                         src="assets/imgs/theme/icons/icon-location.svg"
                         alt=""
                       />
-                      <strong>Address: </strong>{" "}
+                      <strong>Address: </strong>
                       <span>
-                        5171 W Campbell Ave undefined Kent, Utah 53127 United
-                        States
+                        5171 W Campbell Ave undefined Kent, Utah 53127
+                        UnitedStates
                       </span>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <img
                         src="assets/imgs/theme/icons/icon-contact.svg"
                         alt=""
                       />
                       <strong>Call Us:</strong>
                       <span>(+91) - 540-025-124553</span>
-                    </li>
+                    </li> */}
                     <li>
                       <img
                         src="assets/imgs/theme/icons/icon-email-2.svg"
@@ -845,7 +845,7 @@ function Register() {
                         <Link
                           to="http://wp.alithemes.com/cdn-cgi/l/email-protection"
                           className="__cf_email__"
-                          data-cfemail="96e5f7faf3d6d8f3e5e2b8f5f9fb"
+                          data-cfemail="5023313c35101e3523247e333f3d"
                         >
                           [email&#160;protected]
                         </Link>
@@ -862,7 +862,10 @@ function Register() {
                   </ul>
                 </div>
               </div>
-              <div className="footer-link-widget col">
+              <div
+                className="footer-link-widget col wow animate__animated animate__fadeInUp"
+                data-wow-delay=".1s"
+              >
                 <h4 className="widget-title">Company</h4>
                 <ul className="footer-list mb-sm-5 mb-md-0">
                   <li>
@@ -888,7 +891,10 @@ function Register() {
                   </li>
                 </ul>
               </div>
-              <div className="footer-link-widget col">
+              {/* <div
+                className="footer-link-widget col wow animate__animated animate__fadeInUp"
+                data-wow-delay=".2s"
+              >
                 <h4 className="widget-title">Account</h4>
                 <ul className="footer-list mb-sm-5 mb-md-0">
                   <li>
@@ -913,8 +919,11 @@ function Register() {
                     <Link to="#">Compare products</Link>
                   </li>
                 </ul>
-              </div>
-              <div className="footer-link-widget col">
+              </div> */}
+              <div
+                className="footer-link-widget col wow animate__animated animate__fadeInUp"
+                data-wow-delay=".3s"
+              >
                 <h4 className="widget-title">Corporate</h4>
                 <ul className="footer-list mb-sm-5 mb-md-0">
                   <li>
@@ -940,11 +949,14 @@ function Register() {
                   </li>
                 </ul>
               </div>
-              <div className="footer-link-widget col">
+              {/* <div
+                className="footer-link-widget col wow animate__animated animate__fadeInUp"
+                data-wow-delay=".4s"
+              >
                 <h4 className="widget-title">Popular</h4>
                 <ul className="footer-list mb-sm-5 mb-md-0">
                   <li>
-                    <Link to="#">Milk & Flavoured Milk</Link>
+                    <Link to="#">Milk &amp; Flavoured Milk</Link>
                   </li>
                   <li>
                     <Link to="#">Butter and Margarine</Link>
@@ -959,18 +971,19 @@ function Register() {
                     <Link to="#">Sour Cream and Dips</Link>
                   </li>
                   <li>
-                    <Link to="#">Tea & Kombucha</Link>
+                    <Link to="#">Tea &amp; Kombucha</Link>
                   </li>
                   <li>
                     <Link to="#">Cheese</Link>
                   </li>
                 </ul>
-              </div>
-              <div className="footer-link-widget widget-install-app col">
+              </div> */}
+              <div
+                className="footer-link-widget widget-install-app col wow animate__animated animate__fadeInUp"
+                data-wow-delay=".5s"
+              >
                 <h4 className="widget-title">Install App</h4>
-                <p className="wow fadeIn animated">
-                  From App Store or Google Play
-                </p>
+                <p className="">From App Store or Google Play</p>
                 <div className="download-app">
                   <Link to="#" className="hover-up mb-sm-2 mb-lg-0">
                     <img
@@ -985,7 +998,7 @@ function Register() {
                 </div>
                 <p className="mb-20">Secured Payment Gateways</p>
                 <img
-                  className="wow fadeIn animated"
+                  className=""
                   src="assets/imgs/theme/payment-method.png"
                   alt=""
                 />
