@@ -820,7 +820,7 @@ function Homepage() {
                         <h2 className="mb-10 text-center">
                           Shop Easy, Shop Quick
                         </h2>
-                        <p className="mb-10 mt-45" style={{fontSize: "25px", fontWeight: "bold"}}>
+                        <p className="delivery-info mb-10 mt-45" style={{fontSize: "20px", fontWeight: "bold"}}>
                           <img
                             className="mr-10"
                             src="assets/imgs/theme/icons/icon-location.svg"
@@ -847,8 +847,8 @@ function Homepage() {
                       style={{
                         height: "100%",
                         width: "100%",
+                        padding: "10px",
                         paddingTop: "60px",
-                        margin: "50px",
                       }}
                       src={"./assets/imgs/banner/home.png"}
                       alt=""
