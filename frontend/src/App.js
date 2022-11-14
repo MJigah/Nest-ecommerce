@@ -15,7 +15,7 @@ import Wishlist from "./pages/Wishlist";
 
 function App() {
   useEffect(() => {
-    appendScript("./assets/js/main8c94.js");
+    // appendScript("./assets/js/main8c94.js");
   }, [])
   
   return (

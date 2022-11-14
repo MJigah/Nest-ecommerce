@@ -772,33 +772,48 @@ function Dashboard() {
                                     <td>Processing</td>
                                     <td>$125.00 for 2 item</td>
                                     <td>
-                                      <Link to="#" className="btn-small d-block">
+                                      <Link to="#" className="order-button-active btn-small d-block">
                                         View
                                       </Link>
                                     </td>
                                   </tr>
+                                  <div className="categories-dropdown-wrap order-dropdown-active-large">
+                                    <p>[Name of Store]</p>
+                                    <div>Item Receipt</div>
+                                    <div>Rating</div>
+                                  </div>
                                   <tr>
                                     <td>#2468</td>
                                     <td>June 29, 2020</td>
                                     <td>Completed</td>
                                     <td>$364.00 for 5 item</td>
                                     <td>
-                                      <Link to="#" className="btn-small d-block">
+                                    <Link to="#" className="order-button-active btn-small d-block">
                                         View
                                       </Link>
                                     </td>
                                   </tr>
+                                  <div className="categories-dropdown-wrap order-dropdown-active-large">
+                                    <p>[Name of Store]</p>
+                                    <div>Item Receipt</div>
+                                    <div>Rating</div>
+                                    </div>
                                   <tr>
                                     <td>#2366</td>
                                     <td>August 02, 2020</td>
                                     <td>Completed</td>
                                     <td>$280.00 for 3 item</td>
                                     <td>
-                                      <Link to="#" className="btn-small d-block">
+                                    <Link to="#" className="order-button-active btn-small d-block">
                                         View
                                       </Link>
                                     </td>
                                   </tr>
+                                  <div className="categories-dropdown-wrap order-dropdown-active-large">
+                                    <p>[Name of store]</p>
+                                    <div>Item Receipt</div>
+                                    <div>Rating</div>
+                                    </div>
                                 </tbody>
                               </table>
                             </div>
