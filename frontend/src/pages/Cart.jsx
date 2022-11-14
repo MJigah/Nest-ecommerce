@@ -8,6 +8,19 @@ function Cart() {
   }, [])
   return (
     <>
+            <div className="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+            <div className="modal-dialog">
+                <div className="modal-content">
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div className="modal-body">
+                        Ordering Products from different store attracts extra delivery Charges
+                        <div>
+                          <button type="button" data-bs-dismiss="modal" aria-label="Close">Cancel</button><button>Proceed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       <header className="header-area header-style-1 header-height-2">
         <div
           className="header-top header-top-ptb-1 d-none d-lg-block header-bottom-bg-color"
@@ -984,7 +997,7 @@ function Cart() {
                     </tbody>
                   </table>
                 </div>
-                <Link to="/checkout" className="btn mb-20 w-100">
+                <Link aria-label="Quick view" data-bs-toggle="modal" data-bs-target="#quickViewModal" to="#" className="btn mb-20 w-100">
                   Proceed To CheckOut<i className="fi-rs-sign-out ml-15"></i>
                 </Link>
               </div>
