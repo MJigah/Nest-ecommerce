@@ -820,7 +820,10 @@ function Homepage() {
                         <h2 className="mb-10 text-center">
                           Shop Easy, Shop Quick
                         </h2>
-                        <p className="delivery-info mb-10 mt-45" style={{fontSize: "20px", fontWeight: "bold"}}>
+                        <p
+                          className="delivery-info mb-10 mt-45"
+                          style={{ fontSize: "20px", fontWeight: "bold" }}
+                        >
                           <img
                             className="mr-10"
                             src="assets/imgs/theme/icons/icon-location.svg"
@@ -829,15 +832,30 @@ function Homepage() {
                           Where are you delivering to?
                         </p>
                         <div className="search-form mt-20">
-                          <form action="#">
-                            <input
-                              type="text"
-                              placeholder="Search City or Town"
-                            />
-                            <button type="submit">
-                              <i className="fi-rs-search"></i>
-                            </button>
-                          </form>
+                          <div className="address-form">
+                            <div className="number-form mr-10">
+                              <form action="#">
+                                <input
+                                  className="search-input"
+                                  type="text"
+                                  placeholder="House No."
+                                />
+                              </form>
+                            </div>
+                            <div className="search-address-form">
+                              <form action="#">
+                                <input
+                                  className="search-input"
+                                  type="text"
+                                  placeholder="Search City or Town"
+                                />
+                                <button type="submit">
+                                  <i className="fi-rs-search"></i>
+                                </button>
+                              </form>
+                            </div>
+                          </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -888,7 +906,10 @@ function Homepage() {
             </div>
           </div>
         </section>
-        <section className="section-padding footer-mid" style={{textAlign: "center"}}>
+        <section
+          className="section-padding footer-mid"
+          style={{ textAlign: "center" }}
+        >
           <div className="container pt-15 pb-20">
             <div className="row">
               <div className="col">

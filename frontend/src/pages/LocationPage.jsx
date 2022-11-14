@@ -768,12 +768,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -788,14 +782,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -845,12 +831,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          18 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -865,14 +845,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -922,12 +894,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          63 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -942,14 +908,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -999,12 +957,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1019,14 +971,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1074,12 +1018,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1094,14 +1032,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1149,12 +1079,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1169,14 +1093,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1223,12 +1139,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1243,14 +1153,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1297,12 +1199,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1317,14 +1213,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1371,12 +1259,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1391,14 +1273,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1445,12 +1319,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1465,14 +1333,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1519,12 +1379,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1539,14 +1393,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1593,12 +1439,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1613,14 +1453,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1668,12 +1500,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1688,14 +1514,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1742,12 +1560,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1762,14 +1574,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1816,12 +1620,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1836,14 +1634,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -1890,12 +1680,6 @@ function LocationPage() {
                           </span>
                         </div>
                       </div>
-
-                      <div className="mb-10">
-                        <span className="font-small total-product">
-                          380 products
-                        </span>
-                      </div>
                     </div>
 
                     <div className="vendor-info mb-30">
@@ -1910,14 +1694,6 @@ function LocationPage() {
                             5171 W Campbell Ave undefined Kent, Utah 53127
                             United States
                           </span>
-                        </li>
-                        <li>
-                          <img
-                            src="assets/imgs/theme/icons/icon-contact.svg"
-                            alt=""
-                          />
-                          <strong>Call Us:</strong>
-                          <span>(+91) - 540-025-124553</span>
                         </li>
                       </ul>
                     </div>
@@ -2074,7 +1850,10 @@ function LocationPage() {
             </div>
           </div>
         </section>
-        <section className="section-padding footer-mid" style={{textAlign: "center"}}>
+        <section
+          className="section-padding footer-mid"
+          style={{ textAlign: "center" }}
+        >
           <div className="container pt-15 pb-20">
             <div className="row">
               <div className="col">

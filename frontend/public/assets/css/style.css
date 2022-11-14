@@ -70,6 +70,26 @@ input[type="radio"] {
   padding-left: 3px;
 }
 
+.address-form{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+}
+
+.number-form{
+  flex: .8;
+  margin-right:2px;
+}
+
+.search-address-form{
+  flex: 3;
+}
+
+.search-input{
+  border: 1px solid #cccccc;
+  border-radius: none;
+}
+
 @media only screen and (max-width: 1024px) {
   .header-style-1.header-style-5 .header-bottom-bg-color {
     background-color: #3bb77e !important;
