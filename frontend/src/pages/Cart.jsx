@@ -633,14 +633,13 @@ function Cart() {
             </div>
           </div>
         </div>
-        <div className="container mb-80 mt-50">
+        <div className="container mb-80 mt-50 ml-30">
           <div className="row">
             <div className="col-lg-8 mb-40">
               <h1 className="heading-2 mb-10">Your Cart</h1>
               <div className="d-flex justify-content-between">
                 <h6 className="text-body">
-                  There are <span className="text-brand">3</span> products in
-                  your cart
+                  
                 </h6>
                 <h6 className="text-body">
                   <Link to="#" className="text-muted">
@@ -707,7 +706,7 @@ function Cart() {
                             Field Roast Chao Cheese Creamy Original
                           </Link>
                         </h6>
-                        <div className="product-rate-cover">
+                        {/* <div className="product-rate-cover">
                           <div className="product-rate d-inline-block">
                             <div
                               className="product-rating"
@@ -718,7 +717,8 @@ function Cart() {
                             {" "}
                             (4.0)
                           </span>
-                        </div>
+                        </div> */}
+                        <p>[Name of store]</p>
                       </td>
                       <td className="price" data-title="Price">
                         <h4 className="text-body">$2.51 </h4>
@@ -774,7 +774,7 @@ function Cart() {
                             Blue Diamond Almonds Lightly Salted
                           </Link>
                         </h6>
-                        <div className="product-rate-cover">
+                        {/* <div className="product-rate-cover">
                           <div className="product-rate d-inline-block">
                             <div
                               className="product-rating"
@@ -785,7 +785,8 @@ function Cart() {
                             {" "}
                             (4.0)
                           </span>
-                        </div>
+                        </div> */}
+                        <p>[Name of Store]</p>
                       </td>
                       <td className="price" data-title="Price">
                         <h4 className="text-body">$3.2 </h4>
@@ -841,7 +842,7 @@ function Cart() {
                             Fresh Organic Mustard Leaves Bell Pepper
                           </Link>
                         </h6>
-                        <div className="product-rate-cover">
+                        {/* <div className="product-rate-cover">
                           <div className="product-rate d-inline-block">
                             <div
                               className="product-rating"
@@ -852,7 +853,8 @@ function Cart() {
                             {" "}
                             (4.0)
                           </span>
-                        </div>
+                        </div> */}
+                        <p>[Name of Store]</p>
                       </td>
                       <td className="price" data-title="Price">
                         <h4 className="text-body">$2.43 </h4>
@@ -908,27 +910,9 @@ function Cart() {
                           <div className="custom_select">
                             <input
                               type="text"
-                              placeholder="Enter your destination"
+                              placeholder="Delivery Address"
                             />
                           </div>
-                        </div>
-                      </div>
-                      <div className="form-row row">
-                        <div className="form-group col-lg-6">
-                          <input
-                            required="required"
-                            placeholder="State / Country"
-                            name="name"
-                            type="text"
-                          />
-                        </div>
-                        <div className="form-group col-lg-6">
-                          <input
-                            required="required"
-                            placeholder="PostCode / ZIP"
-                            name="name"
-                            type="text"
-                          />
                         </div>
                       </div>
                     </form>
@@ -978,20 +962,10 @@ function Cart() {
                       </tr>
                       <tr>
                         <td className="cart_total_label">
-                          <h6 className="text-muted">Shipping</h6>
+                          <h6 className="text-muted">Delivery Fee</h6>
                         </td>
                         <td className="cart_total_amount">
-                          <h5 className="text-heading text-end">Free</h5>
-                        </td>{" "}
-                      </tr>{" "}
-                      <tr>
-                        <td className="cart_total_label">
-                          <h6 className="text-muted">Estimate for</h6>
-                        </td>
-                        <td className="cart_total_amount">
-                          <h5 className="text-heading text-end">
-                            United Kingdom
-                          </h5>
+                          <h5 className="text-heading text-end">$0</h5>
                         </td>{" "}
                       </tr>{" "}
                       <tr>
