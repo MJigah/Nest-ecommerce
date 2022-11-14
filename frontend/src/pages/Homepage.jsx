@@ -4,7 +4,7 @@ import { appendScript } from "../utils/appendScript";
 
 function Homepage() {
   useEffect(() => {
-    appendScript("../assets/js/main8c94.js");
+    // appendScript("../assets/js/main8c94.js");
   }, []);
   return (
     <>

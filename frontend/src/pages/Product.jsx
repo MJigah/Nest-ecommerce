@@ -1083,7 +1083,7 @@ function Product() {
                               Description
                             </Link>
                           </li>
-                          <li className="nav-item">
+                          {/* <li className="nav-item">
                             <Link
                               className="nav-link"
                               id="Additional-info-tab"
@@ -1092,8 +1092,8 @@ function Product() {
                             >
                               Additional info
                             </Link>
-                          </li>
-                          <li className="nav-item">
+                          </li> */}
+                          {/* <li className="nav-item">
                             <Link
                               className="nav-link"
                               id="Vendor-info-tab"
@@ -1102,7 +1102,7 @@ function Product() {
                             >
                               Vendor
                             </Link>
-                          </li>
+                          </li> */}
                           <li className="nav-item">
                             <Link
                               className="nav-link"
@@ -1169,58 +1169,9 @@ function Product() {
                                 drunkenly more much wow callously irrespective
                                 limpet.
                               </p>
-                              <h4 className="mt-30">Packaging & Delivery</h4>
-                              <hr className="wp-block-separator is-style-wide" />
-                              <p>
-                                Less lion goodness that euphemistically robin
-                                expeditiously bluebird smugly scratched far
-                                while thus cackled sheepishly rigid after due
-                                one assenting regarding censorious while
-                                occasional or this more crane went more as this
-                                less much amid overhung anathematic because much
-                                held one exuberantly sheep goodness so where rat
-                                wry well concomitantly.
-                              </p>
-                              <p>
-                                Scallop or far crud plain remarkably far by thus
-                                far iguana lewd precociously and and less
-                                rattlesnake contrary caustic wow this near alas
-                                and next and pled the yikes articulate about as
-                                less cackled dalmatian in much less well jeering
-                                for the thanks blindly sentimental whimpered
-                                less across objectively fanciful grimaced wildly
-                                some wow and rose jeepers outgrew lugubrious
-                                luridly irrationally attractively dachshund.
-                              </p>
-                              <h4 className="mt-30">Suggested Use</h4>
-                              <ul className="product-more-infor mt-30">
-                                <li>Refrigeration not necessary.</li>
-                                <li>Stir before serving</li>
-                              </ul>
-                              <h4 className="mt-30">Other Ingredients</h4>
-                              <ul className="product-more-infor mt-30">
-                                <li>
-                                  Organic raw pecans, organic raw cashews.
-                                </li>
-                                <li>
-                                  This butter was produced using a LTG (Low
-                                  Temperature Grinding) process
-                                </li>
-                                <li>
-                                  Made in machinery that processes tree nuts but
-                                  does not process peanuts, gluten, dairy or soy
-                                </li>
-                              </ul>
-                              <h4 className="mt-30">Warnings</h4>
-                              <ul className="product-more-infor mt-30">
-                                <li>
-                                  Oil separation occurs naturally. May contain
-                                  pieces of shell.
-                                </li>
-                              </ul>
                             </div>
                           </div>
-                          <div className="tab-pane fade" id="Additional-info">
+                          {/* <div className="tab-pane fade" id="Additional-info">
                             <table className="font-md">
                               <tbody>
                                 <tr className="stand-up">
@@ -1311,8 +1262,8 @@ function Product() {
                                 </tr>
                               </tbody>
                             </table>
-                          </div>
-                          <div className="tab-pane fade" id="Vendor-info">
+                          </div> */}
+                          {/* <div className="tab-pane fade" id="Vendor-info">
                             <div className="vendor-logo d-flex mb-30">
                               <img
                                 src="assets/imgs/vendor/vendor-18.svg"
@@ -1387,7 +1338,7 @@ function Product() {
                               2018, there were 460 Noodles & Company locations
                               across 29 states and Washington, D.C.
                             </p>
-                          </div>
+                          </div> */}
                           <div className="tab-pane fade" id="Reviews">
                             {/* <!--Comments--> */}
                             <div className="comments-area">

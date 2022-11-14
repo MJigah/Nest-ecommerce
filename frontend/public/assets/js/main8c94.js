@@ -656,32 +656,38 @@
         $offCanvasNavSubMenu = $offCanvasNav.find(".dropdown");
 
     /*Add Toggle Button With Off Canvas Sub Menu*/
-    $offCanvasNavSubMenu.parent().prepend('<span class="menu-expand"><i class="fi-rs-angle-small-down"></i></span>');
+    if($offCanvasNavSubMenu.parent().find('.menu-expand').length === 0){
+        $offCanvasNavSubMenu.parent().prepend('<span class="menu-expand"><i class="fi-rs-angle-small-down"></i></span>');
+    }
 
     /*Close Off Canvas Sub Menu*/
     $offCanvasNavSubMenu.slideUp();
 
     /*Category Sub Menu Toggle*/
     $offCanvasNav.on("click", "li a, li .menu-expand", function (e) {
-        var $this = $(this);
-        if (
-            $this
-                .parent()
-                .attr("class")
-                .match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/) &&
-            ($this.attr("href") === "#" || $this.hasClass("menu-expand"))
-        ) {
-            e.preventDefault();
-            if ($this.siblings("ul:visible").length) {
-                $this.parent("li").removeClass("active");
-                $this.siblings("ul").slideUp();
-            } else {
-                $this.parent("li").addClass("active");
-                $this.closest("li").siblings("li").removeClass("active").find("li").removeClass("active");
-                $this.closest("li").siblings("li").find("ul:visible").slideUp();
-                $this.siblings("ul").slideDown();
+            var $this = $(this);
+            if (
+                $this
+                    .parent()
+                    .attr("class")
+                    .match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/) &&
+                ($this.attr("href") === "#" || $this.hasClass("menu-expand"))
+            ) {
+                e.preventDefault();
+                // console.log($this.siblings("ul:visible").length)
+                if ($this.siblings("ul:visible").length) {
+                    // console.log($this.siblings("ul:visible").length)
+                    $this.parent("li").removeClass("active");
+                    $this.siblings("ul").slideUp();
+                } else {
+                    // console.log($this.siblings("ul:visible").length)
+                    $this.parent("li").addClass("active");
+                    $this.closest("li").siblings("li").removeClass("active").find("li").removeClass("active");
+                    $this.closest("li").siblings("li").find("ul:visible").slideUp();
+                    $this.siblings("ul").slideDown();
+                    // $offCanvasNavSubMenu.parent().prepend('<span class="menu-expand"><i class="fi-rs-angle-small-down"></i></span>')
+                }
             }
-        }
     });
 
     /*--- language currency active ----*/
