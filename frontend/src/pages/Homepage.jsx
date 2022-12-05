@@ -352,8 +352,8 @@ function Homepage() {
                             </Link>
                           </li>
                           <li>
-                            <Link to="/dashboard">
-                              <i className="fi fi-rs-label mr-10"></i>My Voucher
+                            <Link to="/location">
+                              <i className="fi fi-rs-label mr-10"></i>Location
                             </Link>
                           </li>
                           <li>
