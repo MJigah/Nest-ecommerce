@@ -47,7 +47,7 @@ const userLogin = asyncHandler(async (req, res) => {
             })
         } else {
             res.status(400).send({message: 'Invaid Password or Login Details'});
-        }
+        } 
     } catch (error) {
         res.send('A Server Error Occured!')
         console.log(error);
@@ -55,11 +55,16 @@ const userLogin = asyncHandler(async (req, res) => {
 })
 
 const getUserDetails = asyncHandler(async(req, res) => {
-    const user = await User.findById(req.user._id).select('-password')
-    if(!user){
-        res.status(400).send({message: 'No Token Found'});
+    try{
+        const user = await User.findById(req.user._id).select('-password')
+        if(!user){
+            res.status(400).send({message: 'No Token Found'});
+        }
+        res.status(200).send({data: user})
+    } catch(error){
+        res.status(500).send({message: 'Server Error Occured!'});
+        console.log(error);
     }
-    res.status(200).send({data: user})
 })
 
 module.exports = {
