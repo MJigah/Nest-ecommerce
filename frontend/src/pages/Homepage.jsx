@@ -526,8 +526,8 @@ function Homepage() {
                 <div className="single-page pt-50 pr-30">
                   <div className="single-header style-2">
                     <div className="row">
-                      <div className="col-xl-10 col-lg-12 m-auto">
-                        <h2 className="mb-10 text-center">
+                      <div className="col-xl-10 col-lg-12 m-auto welcome-text-container">
+                        <h2 className="mb-10 text-center welcome-text">
                           Shop Easy, Shop Quick
                         </h2>
                         <p
@@ -541,6 +541,7 @@ function Homepage() {
                           />
                           Where are you delivering to?
                         </p>
+                        <p className="mobile-welcome-text">Experience Satisfaction</p>
                         <div className="search-form mt-20">
                           <div className="address-form">
                             <div className="number-form mr-10">

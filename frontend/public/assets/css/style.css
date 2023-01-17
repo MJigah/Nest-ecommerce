@@ -9,6 +9,10 @@ input[type="radio"] {
   padding-left: 30px;
 }
 
+.mobile-welcome-text{
+  display: none;
+}
+
 .primary-sidebar .sidebar-widget,
 .banner-img {
   margin-left: 30px;
@@ -137,5 +141,30 @@ input[type="radio"] {
   li.hot-deals,
   .header-action-2 .header-action-icon-2 span.lable {
     display: block !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  /* HOMEPAGE  */
+  .header-bottom{
+    display: none;
+  }
+
+  .welcome-text-container{
+    width: 250px;
+  }
+
+  .welcome-text-container h2{
+    font-size: 15px;
+    display: none;
+  }
+
+  .welcome-text{
+    font-size: 17px;
+  }
+  
+  .mobile-welcome-text{
+    /* font-size: 17px; */
+    display: block;
   }
 }
