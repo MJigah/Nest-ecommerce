@@ -10,6 +10,7 @@ input[type="radio"] {
 }
 
 .mobile-welcome-text{
+  font-weight: bold;
   display: none;
 }
 
@@ -21,6 +22,13 @@ input[type="radio"] {
 .vendor-grid{
   margin-left: auto;
   margin-right: auto;
+}
+
+.home-img{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  padding-top: 60px;
 }
 
 .pagination-area{
@@ -149,12 +157,19 @@ input[type="radio"] {
   .header-bottom{
     display: none;
   }
-
-  .welcome-text-container{
-    width: 250px;
+  
+  .welcome-container{
+    width: 100%;
+    margin: 90px 0 0;
   }
 
-  .welcome-text-container h2{
+  .welcome-text-container{
+    width: 300px;
+    padding: 10px;
+  }
+
+  .welcome-text-container h2,
+  .delivery-info{
     font-size: 15px;
     display: none;
   }
@@ -164,7 +179,74 @@ input[type="radio"] {
   }
   
   .mobile-welcome-text{
-    /* font-size: 17px; */
+    font-size: 20px;
     display: block;
+  }
+
+  /* .address-form{
+    border: 1px solid grey;
+  } */
+
+  .number-form{
+    display: none;
+  }
+
+  .search-address-form{
+    width: 100%;
+  }
+
+  .search-address-form input{
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 0 10px 10px rgb(185, 185, 185);
+  }
+  
+  .search-address-button{
+    display: none;
+  }
+  
+  .search-address-form input::placeholder{
+    content: 'Where are you delivering to?';
+    font-weight: normal;
+  }
+
+  .search-input{
+    padding: 0;
+  }
+
+  .home-img{
+    padding: 0;
+  }
+
+  .signin-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .log-button button,
+  .sign-button button{
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 8px 0;
+    border: none;
+  }
+
+  .log-button button{
+    background: rgb(255, 176, 74);
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .sign-button button{
+    background: rgb(110, 217, 176);
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid rgb(62, 122, 99);
   }
 }

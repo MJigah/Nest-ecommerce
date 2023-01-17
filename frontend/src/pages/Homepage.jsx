@@ -525,7 +525,7 @@ function Homepage() {
               <div className="col-lg-9 m-auto">
                 <div className="single-page pt-50 pr-30">
                   <div className="single-header style-2">
-                    <div className="row">
+                    <div className="row welcome-container">
                       <div className="col-xl-10 col-lg-12 m-auto welcome-text-container">
                         <h2 className="mb-10 text-center welcome-text">
                           Shop Easy, Shop Quick
@@ -541,7 +541,7 @@ function Homepage() {
                           />
                           Where are you delivering to?
                         </p>
-                        <p className="mobile-welcome-text">Experience Satisfaction</p>
+                        <p className="mobile-welcome-text">Experience Satisfaction!!</p>
                         <div className="search-form mt-20">
                           <div className="address-form">
                             <div className="number-form mr-10">
@@ -560,7 +560,7 @@ function Homepage() {
                                   type="text"
                                   placeholder="Search City or Town"
                                 />
-                                <button type="submit">
+                                <button type="submit" className="search-address-button">
                                   <i className="fi-rs-search"></i>
                                 </button>
                               </form>
@@ -573,6 +573,7 @@ function Homepage() {
                   </div>
                   <figure className="text-center single-thumbnail">
                     <img
+                    className="home-img"
                       style={{
                         height: "100%",
                         width: "100%",
@@ -583,6 +584,14 @@ function Homepage() {
                       alt=""
                     />
                   </figure>
+                </div>
+              </div>
+              <div className="signin-info">
+                <div className="log-button">
+                  <button>Log In</button>
+                </div>
+                <div className="sign-button">
+                  <button>Sign Up</button>
                 </div>
               </div>
             </div>
