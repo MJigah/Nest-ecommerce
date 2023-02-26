@@ -8,7 +8,7 @@ function LocationPage() {
   }, []);
   return (
     <>
-      <header className="header-area header-style-1 header-height-2">
+      <header className="header-area header-style-1 header-height-2 location-header">
         <div
           className="header-top header-top-ptb-1 d-none d-lg-block header-bottom-bg-color"
           style={{ backgroundColor: "#3bb77e" }}
@@ -635,7 +635,11 @@ function LocationPage() {
         <div className="page-content pt-50">
           <div className="container">
             <div className="archive-header-2 text-center">
-              <h1 className="display-2 mb-50">[Location Name]</h1>
+              <h1 className="display-2 mb-50 location-content-header">[Location Name]</h1>
+              <div className="location-content-desc">
+                <div className="content-location">[Abidjan Street, Wuse]</div>
+                <div className="content-help">For Help <span>+233 000 000 0000</span></div>
+              </div>
               <div className="row">
                 <div className="col-lg-5 mx-auto">
                   <div className="sidebar-widget-2 widget_search mb-50">
@@ -654,12 +658,12 @@ function LocationPage() {
             <div className="row mb-50">
               <div className="col-12 col-lg-8 mx-auto">
                 <div className="shop-product-fillter">
-                  <div className="totall-product">
+                  {/* <div className="totall-product">
                     <p>
                       We have <strong className="text-brand">780</strong>{" "}
                       Supermarket now
                     </p>
-                  </div>
+                  </div> */}
                   <div className="sort-by-product-area">
                     <div className="sort-by-cover mr-10">
                       <div className="sort-by-product-wrap">

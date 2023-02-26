@@ -644,7 +644,7 @@ function Login() {
                           <h1 className="mb-5">Login</h1>
                         </div>
                         <div className="login-form-description">
-                          <h1 className="login-desc-header"><span>Great</span> To Have You Back !!!</h1>
+                          <h1 className="login-desc-header"><span className="login-desc-block">Great</span> To Have You Back !!!</h1>
                           <p>Please enter your correct details</p>
                         </div>
                         <form method="post">
@@ -664,10 +664,6 @@ function Login() {
                               placeholder="Your password *"
                             />
                           </div>
-                          <p className="mb-30">
-                            Don't have an account?{" "}
-                            <Link to="/register">Create here</Link>
-                          </p>
                           {/* <div className="login_footer form-group" style={{textAlign: "center"}}>
                             <div className="chek-form">
                               <input
@@ -716,7 +712,23 @@ function Login() {
                               Log in
                             </button>
                           </div>
+                          <p className="mb-30">
+                            Don't have an account?{" "}
+                            <Link to="/register">Sign up here</Link>
+                          </p>
                         </form>
+                        <div className="social-form">
+                          <p>OR</p>
+                          <div className="socials-connect">
+                            <Link to="#">Sign in with Google</Link>
+                          </div>
+                          <div className="socials-connect">
+                            <Link to="#">Sign in with Facebook</Link>
+                          </div>
+                          <div className="socials-connect">
+                            <Link to="#">Sign in with Apple</Link>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -268,7 +268,64 @@ input[type="radio"] {
   .login-desc-header{
     font-size: 24px;
     display: block;
+    color:rgb(110, 217, 176);
   }
 
+  .login-desc-block{
+    color:rgb(255, 176, 74);
+  }
 
+  .text-muted{
+    color:rgb(110, 217, 176) !important;
+  }
+
+  .social-form{
+    text-align: center;
+    display: block;
+  }
+
+  .socials-connect{
+    border: 1px solid black;
+    margin: 7px 0;
+    padding: 5px 0;
+    border-radius: 20px;
+  }
+
+  .socials-connect a{
+    color: black;
+  }
+
+  /* LOCATION PAGE */
+  .location-header{
+    display: none;
+  }
+
+  .location-content-header{
+    display: none;
+  }
+
+  .location-content-desc{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 19px;
+  }
+
+  .location-content-desc div{
+    flex: 1;
+  }
+
+  .content-location{
+    color:rgb(110, 217, 176);
+  }
+  
+  .content-help{
+    color:rgb(110, 217, 176);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-help span{
+    color: black;
+  }
 }
