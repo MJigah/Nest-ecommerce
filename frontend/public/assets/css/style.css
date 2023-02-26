@@ -249,4 +249,26 @@ input[type="radio"] {
     font-weight: bold;
     border: 1px solid rgb(62, 122, 99);
   }
+
+  /* LOGIN PAGE */
+  .login-header,
+  .login-form-header{
+    display: none;
+  }
+
+  .login-page-content{
+    padding: 40px 20px !important;
+  }
+
+  .login-form-description{
+    /* border: 1px solid red; */
+    margin: 0 0 15px;
+  }
+
+  .login-desc-header{
+    font-size: 24px;
+    display: block;
+  }
+
+
 }
