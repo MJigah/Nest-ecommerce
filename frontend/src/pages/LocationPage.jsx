@@ -637,7 +637,7 @@ function LocationPage() {
             <div className="archive-header-2 text-center">
               <h1 className="display-2 mb-50 location-content-header">[Location Name]</h1>
               <div className="location-content-desc">
-                <div className="content-location">[Abidjan Street, Wuse]</div>
+                <div className="content-location">Abidjan Street, Wuse</div>
                 <div className="content-help">For Help <span>+233 000 000 0000</span></div>
               </div>
               <div className="row">

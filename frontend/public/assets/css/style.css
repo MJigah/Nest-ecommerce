@@ -131,6 +131,44 @@ input[type="radio"] {
   /* visibility: visible; */
 }
 
+/* Hompage Styling */
+.signin-info{
+  display: none;
+}
+
+/* Login Styling */
+.login-form-header{
+  display: none;
+}
+
+.login-form-description{
+  margin-bottom: 15px;
+}
+
+.login-desc-header{
+  /* font-size: 24px; */
+  display: block;
+  margin-bottom: 10px;
+  color:rgb(110, 217, 176);
+}
+
+.login-desc-block{
+  color:rgb(255, 176, 74);
+}
+
+.text-muted{
+  color:rgb(110, 217, 176) !important;
+}
+
+/* Location Styling */
+.location-content-desc{
+  display: none;
+}
+
+.content-help{
+  font-size: 13px;
+}
+
 @media only screen and (max-width: 1024px) {
   .header-style-1.header-style-5 .header-bottom-bg-color {
     background-color: #3bb77e !important;
