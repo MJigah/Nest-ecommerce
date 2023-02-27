@@ -5,7 +5,7 @@ import { appendScript } from "../utils/appendScript";
 function Login() {
   useEffect(() => {
     appendScript("../assets/js/main8c94.js");
-  }, [])
+  }, []);
   return (
     <>
       <header className="header-area header-style-1 header-height-2 login-header">
@@ -640,11 +640,17 @@ function Login() {
                   <div className="col-lg-12 col-md-8">
                     <div className="login_wrap widget-taber-content background-white">
                       <div className="padding_eight_all bg-white">
-                        <div className="heading_s1 login-form-header" style={{textAlign: "center"}}>
+                        <div
+                          className="heading_s1 login-form-header"
+                          style={{ textAlign: "center" }}
+                        >
                           <h1 className="mb-5">Login</h1>
                         </div>
                         <div className="login-form-description">
-                          <h1 className="login-desc-header"><span className="login-desc-block">Great</span> To Have You Back !!!</h1>
+                          <h1 className="login-desc-header">
+                            <span className="login-desc-block">Great</span> To
+                            Have You Back !!!
+                          </h1>
                           <p>Please enter your correct details</p>
                         </div>
                         <form method="post">
@@ -680,7 +686,14 @@ function Login() {
                               <b className="text-best">5</b>
                             </span>
                           </div> */}
-                          <div className="login_footer form-group mb-50" style={{textAlign: "center", alignItems: "center", justifyContent: "space-between"}}>
+                          <div
+                            className="login_footer form-group mb-50"
+                            style={{
+                              textAlign: "center",
+                              alignItems: "center",
+                              justifyContent: "space-between",
+                            }}
+                          >
                             <div className="chek-form">
                               <div className="custome-checkbox">
                                 <input
@@ -707,7 +720,7 @@ function Login() {
                               type="submit"
                               className="btn btn-heading btn-block hover-up"
                               name="login"
-                              style={{width: "100%"}}
+                              style={{ width: "100%" }}
                             >
                               Log in
                             </button>
@@ -717,16 +730,36 @@ function Login() {
                             <Link to="/register">Sign up here</Link>
                           </p>
                         </form>
-                        <div className="social-form">
-                          <p>OR</p>
+                        <div className="card-login social-form">
                           <div className="socials-connect">
-                            <Link to="#">Sign in with Google</Link>
+                            <Link
+                              to="#"
+                              className="social-login facebook-login"
+                            >
+                              <img
+                                src="assets/imgs/theme/icons/logo-facebook.svg"
+                                alt=""
+                              />
+                              <span>Sign in with Facebook</span>
+                            </Link>
                           </div>
                           <div className="socials-connect">
-                            <Link to="#">Sign in with Facebook</Link>
+                            <Link to="#" className="social-login google-login">
+                              <img
+                                src="assets/imgs/theme/icons/logo-google.svg"
+                                alt=""
+                              />
+                              <span>Sign in with Google</span>
+                            </Link>
                           </div>
                           <div className="socials-connect">
-                            <Link to="#">Sign in with Apple</Link>
+                            <Link to="#" className="social-login apple-login">
+                              <img
+                                src="assets/imgs/theme/icons/logo-apple.svg"
+                                alt=""
+                              />
+                              <span>Sign in with Apple</span>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -739,28 +772,33 @@ function Login() {
         </div>
       </main>
       <footer className="main">
-      <section className="newsletter mb-15 wow animate__animated animate__fadeIn">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="position-relative newsletter-inner">
-                                <div className="newsletter-content">
-                                    <h2 className="mb-20">
-                                        Stay home & get your daily <br />
-                                        needs from our shop
-                                    </h2>
-                                    <p className="mb-45">Start You'r Daily Shopping with <span className="text-brand">Nest Mart</span></p>
-                                    <form className="form-subcriber d-flex">
-                                        <input type="email" placeholder="Your emaill address" />
-                                        <button className="btn" type="submit">Subscribe</button>
-                                    </form>
-                                </div>
-                                <img src="assets/imgs/banner/banner-9.png" alt="newsletter" />
-                            </div>
-                        </div>
-                    </div>
+        <section className="newsletter mb-15 wow animate__animated animate__fadeIn">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="position-relative newsletter-inner">
+                  <div className="newsletter-content">
+                    <h2 className="mb-20">
+                      Stay home & get your daily <br />
+                      needs from our shop
+                    </h2>
+                    <p className="mb-45">
+                      Start You'r Daily Shopping with{" "}
+                      <span className="text-brand">Nest Mart</span>
+                    </p>
+                    <form className="form-subcriber d-flex">
+                      <input type="email" placeholder="Your emaill address" />
+                      <button className="btn" type="submit">
+                        Subscribe
+                      </button>
+                    </form>
+                  </div>
+                  <img src="assets/imgs/banner/banner-9.png" alt="newsletter" />
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="featured section-padding">
           <div className="container">
             <div className="row">
@@ -833,7 +871,10 @@ function Login() {
             </div>
           </div>
         </section>
-        <section className="section-padding footer-mid" style={{textAlign: "center"}}>
+        <section
+          className="section-padding footer-mid"
+          style={{ textAlign: "center" }}
+        >
           <div className="container pt-15 pb-20">
             <div className="row">
               <div className="col">
@@ -1103,7 +1144,9 @@ function Login() {
                   />
                 </Link>
               </div>
-              <p className="font-sm">Up to 15% discount on your first subscribe</p>
+              <p className="font-sm">
+                Up to 15% discount on your first subscribe
+              </p>
             </div>
           </div>
         </div>
