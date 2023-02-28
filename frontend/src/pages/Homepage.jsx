@@ -588,10 +588,10 @@ function Homepage() {
               </div>
               <div className="signin-info">
                 <div className="log-button">
-                  <button>Log In</button>
+                  <Link to="/login">Log In</Link>
                 </div>
                 <div className="sign-button">
-                  <button>Sign Up</button>
+                  <Link to="/register">Sign Up</Link>
                 </div>
               </div>
             </div>

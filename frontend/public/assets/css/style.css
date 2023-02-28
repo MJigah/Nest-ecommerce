@@ -266,22 +266,32 @@ input[type="radio"] {
     align-items: center;
   }
 
-  .log-button button,
-  .sign-button button{
-    width: 300px;
+  .log-button,
+  .sign-button{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 8px 0;
+    color: #fff;
+  }
+  
+  .log-button a,
+  .sign-button a{
+    color: #fff;
+    width: 100% !important;
     padding: 10px;
     border-radius: 20px;
     margin: 8px 0;
-    border: none;
   }
 
-  .log-button button{
+  .log-button{
     background: rgb(255, 176, 74);
     color: #fff;
     font-weight: bold;
   }
 
-  .sign-button button{
+  .sign-button{
     background: rgb(110, 217, 176);
     color: #fff;
     font-weight: bold;
