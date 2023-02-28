@@ -333,6 +333,11 @@ input[type="radio"] {
     color: black;
   }
 
+.card-login .social-login {
+  font-size: 15px;
+  font-weight: 400;
+}
+
   /* LOCATION PAGE */
   .location-header{
     display: none;
