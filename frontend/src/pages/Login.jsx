@@ -659,15 +659,16 @@ function Login() {
                               type="text"
                               required=""
                               name="email"
-                              placeholder="Username or Email *"
+                              placeholder="Email or Phone number"
                             />
                           </div>
                           <div className="form-group">
                             <input
                               required=""
+                              
                               type="password"
                               name="password"
-                              placeholder="Your password *"
+                              placeholder="Password"
                             />
                           </div>
                           {/* <div className="login_footer form-group" style={{textAlign: "center"}}>

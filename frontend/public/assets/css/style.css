@@ -149,7 +149,7 @@ input[type="radio"] {
   /* font-size: 24px; */
   display: block;
   margin-bottom: 10px;
-  color:rgb(110, 217, 176);
+  color: #198754;
 }
 
 .login-desc-block{
@@ -370,5 +370,31 @@ input[type="radio"] {
 
   .content-help span{
     color: black;
+  }
+
+  /* REGISTER STYLINGS */
+  .register-header{
+    display: none;
+  }
+
+  .register-page-content{
+    padding: 40px 20px !important;
+  }
+
+  .register-form-description{
+    /* border: 1px solid red; */
+    margin: 0 0 15px;
+  }
+  
+  .register-form-description p{
+    font-size: 13px !important;
+  }
+
+  .register-btn{
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 20px !important;
+    background-color: #fd7e14 !important;
+    border: #fd7e14 !important;
   }
 }

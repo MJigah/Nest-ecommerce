@@ -8,7 +8,7 @@ function Register() {
   }, [])
   return (
     <>
-      <header className="header-area header-style-1 header-height-2">
+      <header className="header-area header-style-1 header-height-2 register-header">
         <div
           className="header-top header-top-ptb-1 d-none d-lg-block header-bottom-bg-color"
           style={{ backgroundColor: "#3bb77e" }}
@@ -632,7 +632,7 @@ function Register() {
             </div>
           </div>
         </div>
-        <div className="page-content pt-150 pb-150">
+        <div className="page-content pt-150 pb-150 register-page-content">
           <div className="container">
             <div className="row">
               <div className="col-xl-8 col-lg-10 col-md-12 m-auto">
@@ -640,28 +640,17 @@ function Register() {
                   <div className="col-lg-6 col-md-8">
                     <div className="login_wrap widget-taber-content background-white">
                       <div className="padding_eight_all bg-white">
-                        <div className="heading_s1">
-                          <h1 className="mb-5">Create an Account</h1>
-                          <p className="mb-30">
-                            Already have an account?{" "}
-                            <Link to="/login">Login</Link>
-                          </p>
+                        <div className="register-form-description">
+                          <h1 className="login-desc-header">Experience <span className="login-desc-block">Satisfaction</span></h1>
+                          <p>Sign up and enjoy the best shopping experience.</p>
                         </div>
                         <form method="post">
                           <div className="form-group">
                             <input
                               type="text"
                               required=""
-                              name="username"
-                              placeholder="Username"
-                            />
-                          </div>
-                          <div className="form-group">
-                            <input
-                              type="text"
-                              required=""
                               name="email"
-                              placeholder="Email"
+                              placeholder="Email or Phone number"
                             />
                           </div>
                           <div className="form-group">
@@ -680,23 +669,7 @@ function Register() {
                               placeholder="Confirm password"
                             />
                           </div>
-                          <div className="login_footer form-group">
-                            <div className="chek-form">
-                              <input
-                                type="text"
-                                required=""
-                                name="email"
-                                placeholder="Security code *"
-                              />
-                            </div>
-                            <span className="security-code">
-                              <b className="text-new">8</b>
-                              <b className="text-hot">6</b>
-                              <b className="text-sale">7</b>
-                              <b className="text-best">5</b>
-                            </span>
-                          </div>
-                          <div className="payment_option mb-50">
+                          {/* <div className="payment_option mb-50">
                             <div className="custome-radio">
                               <input
                                 className="form-check-input"
@@ -735,7 +708,7 @@ function Register() {
                                 I am a vendor
                               </label>
                             </div>
-                          </div>
+                          </div> */}
                           <div className="login_footer form-group mb-50">
                             <div className="chek-form">
                               <div className="custome-checkbox">
@@ -762,12 +735,16 @@ function Register() {
                           <div className="form-group mb-30">
                             <button
                               type="submit"
-                              className="btn btn-fill-out btn-block hover-up font-weight-bold"
+                              className="btn btn-fill-out btn-block hover-up font-weight-bold register-btn"
                               name="login"
                             >
-                              Submit &amp; Register
+                              Sign Up
                             </button>
                           </div>
+                          <p className="mb-30">
+                            Already have an account? Sign in here{" "}
+                            <Link to="/login">Login</Link>
+                          </p>
                           <p className="font-xs text-muted">
                             <strong>Note:</strong>Your personal data will be
                             used to support your experience throughout this
