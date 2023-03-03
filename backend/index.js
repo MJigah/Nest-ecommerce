@@ -3,13 +3,13 @@ const dotenv = require('dotenv').config();
 const morgan = require('morgan')
 const colors = require('colors');
 const path = require('path');
-const { errorHandler } = require('./middleware/error.middleware');
+const { errorHandler } = require('./src/middleware/error.middleware');
 const bodyParser = require('body-parser');
-const connectDb = require('./db/index');
+const connectDb = require('./src/config/db/index');
 connectDb();
-const userRoutes = require('./routes/user.routes')
+const userRoutes = require('./src/routes/user.routes')
 const app = express();
-const swaggerDocs = require('./utils/swagger')
+const swaggerDocs = require('./src/config/utils/swagger/swagger')
 
 const port = process.env.PORT || 5000;
 
