@@ -1,0 +1,1073 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+      "title": "Swagger API Docs for Kids Story Illustrator",
+      "description": "This is a sample Story illustrator Server based on the OpenAPI 3.0 specification.",
+      "version": "1.0.11"
+    },
+    "servers": [
+      {
+        "url": "/"
+      }
+    ],
+    "schemes": ["http", "https"],
+    "tags": [
+      {
+        "name": "Story",
+        "description": "Everything about your Story Books"
+      },
+      {
+        "name": "User",
+        "description": "Operations about user"
+      },
+      {
+        "name": "Admin",
+        "description": "Operations for Admin"
+      }
+    ],
+    "paths": {
+      "/story": {
+        "get": {
+          "tags": ["Story"],
+          "summary": "Find All Stories in database",
+          "description": "Find All Stories in database.",
+          "operationId": "getAllStories",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/story/{email}": {
+        "get": {
+          "tags": ["Story"],
+          "summary": "Find Story by Email",
+          "description": "Find Story by Email.",
+          "operationId": "getStoryByEmail",
+          "parameters": [
+            {
+              "name": "email",
+              "in": "path",
+              "description": "email of User",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/story/{id}": {
+        "get": {
+          "tags": ["Story"],
+          "summary": "Find Story by Id",
+          "description": "Find Story by Id.",
+          "operationId": "getStoryById",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "id of Story",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "delete": {
+          "tags": ["Story"],
+          "summary": "Delete story",
+          "description": "Delete story Details.",
+          "operationId": "seleteStory",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "id of Story",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "default": {
+              "description": "successful operation"
+            }
+          }
+        }
+      },
+      "/story/{id}/archive": {
+        "post": {
+          "tags": ["Story"],
+          "summary": "Archive Story by Id",
+          "description": "Archive Story by Id.",
+          "operationId": "archiveStoryById",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "id of Story",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/story/{id}/unarchive": {
+        "post": {
+          "tags": ["Story"],
+          "summary": "Unarchive Story by Id",
+          "description": "Unarchive Story by Id.",
+          "operationId": "unarchiveStoryById",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "id of Story",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/story/post_story": {
+        "post": {
+          "tags": ["Story"],
+          "summary": "Create story",
+          "description": "Create a new Story.",
+          "operationId": "createStory",
+          "requestBody": {
+            "description": "Created sttory object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/storyRequest"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/storyRequest"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/storyRequest"
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "default": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Story"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/users/signup": {
+        "post": {
+          "tags": ["User"],
+          "summary": "Create user",
+          "description": "Register a new user to the system.",
+          "operationId": "createUser",
+          "requestBody": {
+            "description": "Created user object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/userSignup"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/userSignup"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/userSignup"
+                }
+              }
+            }
+          },
+          "responses": {
+            "default": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/users/login": {
+        "post": {
+          "tags": ["User"],
+          "summary": "Login user",
+          "description": "Authenticate an existing user.",
+          "operationId": "loginUser",
+          "requestBody": {
+            "description": "Created user object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/userLogin"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/userLogin"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/userLogin"
+                }
+              }
+            }
+          },
+          "responses": {
+            "default": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/auth/admin_signin": {
+        "post": {
+          "tags": ["User"],
+          "summary": "Login Admin",
+          "description": "Authenticate an admin user.",
+          "operationId": "loginAdmin",
+          "requestBody": {
+            "description": "Created admin object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/userLogin"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/userLogin"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/userLogin"
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "default": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/auth/change_password": {
+        "put": {
+          "tags": ["User"],
+          "summary": "Change User Password",
+          "description": "Change User Password.",
+          "operationId": "changePassword",
+          "requestBody": {
+            "description": "User new password",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/changePassword"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/changePassword"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/changePassword"
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "default": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/users/": {
+        "get": {
+          "tags": ["Admin"],
+          "summary": "Get All User Details",
+          "description": "Admin Operation: Get all user details.",
+          "operationId": "getAllUsers",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/users/subscribe": {
+        "post": {
+          "tags": ["User"],
+          "summary": "Subscribe User",
+          "description": "Subscribe User.",
+          "operationId": "getSubscribeUser",
+          "requestBody": {
+            "description": "User Email Address",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/subscribeUser"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/subscribeUser"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/subscribeUser"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "successful operation"
+            }
+          }
+        }
+      },
+      "/api/users": {
+        "get": {
+          "tags": ["User"],
+          "summary": "Get User Detail",
+          "description": "Get user detail.",
+          "operationId": "getUser",
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "tags": ["User"],
+          "summary": "Update Admin Details",
+          "description": "Update Admin Details.",
+          "operationId": "updateAdmin",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "id of Admin User",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "requestBody": {
+            "description": "Update user object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/adminUpdates"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/adminUpdates"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/adminUpdates"
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "delete": {
+          "tags": ["Admin"],
+          "summary": "Delete admin Details",
+          "description": "Delete admin Details.",
+          "operationId": "deleteAdmin",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "id of Admin User",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "default": {
+              "description": "successful operation"
+            }
+          }
+        }
+      },
+      "/users/forgot-password": {
+        "post": {
+          "tags": ["User"],
+          "summary": "Forgotten Password",
+          "description": "Forgotten User Password.",
+          "operationId": "forgotPassword",
+          "requestBody": {
+            "description": "User Email Object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/forgotPassword"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/forgotPassword"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/forgotPassword"
+                }
+              }
+            }
+          },
+          "responses": {
+            "default": {
+              "description": "successful operation"
+            }
+          }
+        }
+      },
+      "/users/reset-password/{id}/{token}": {
+        "post": {
+          "tags": ["User"],
+          "summary": "Resset Password",
+          "description": "Reset User Password.",
+          "operationId": "resetPassword",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "id of Admin User",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "token",
+              "in": "path",
+              "description": "newly Created Token",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "requestBody": {
+            "description": "New Passwords",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/resetPassword"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/resetPassword"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/resetPassword"
+                }
+              }
+            }
+          },
+          "responses": {
+            "default": {
+              "description": "successful operation"
+            }
+          }
+        }
+      },
+      "/users/{id}/archive": {
+        "post": {
+          "tags": ["User"],
+          "summary": "Archive User by Id",
+          "description": "Archive User by Id.",
+          "operationId": "archiveUserById",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "id of User",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/users/{id}/unarchive": {
+        "post": {
+          "tags": ["User"],
+          "summary": "Unarchive User by Id",
+          "description": "Unarchive User by Id.",
+          "operationId": "unarchiveUserById",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "id of User",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/get_images": {
+        "post": {
+          "tags": ["Images"],
+          "summary": "Get API Image",
+          "description": "Get API Image.",
+          "operationId": "getImage",
+          "requestBody": {
+            "description": "Created image object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/apiImage"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/apiImage"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/apiImage"
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "api_key": []
+            }
+          ],
+          "responses": {
+            "default": {
+              "description": "successful operation"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Story": {
+          "type": "object",
+          "properties": {
+            "author": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "numberOfPages": {
+              "type": "integer"
+            },
+            "isArchived": {
+              "type": "boolean"
+            },
+            "scenes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "caption": {
+                    "type": "string"
+                  },
+                  "imageUrl": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "json": {
+            "name": "Story"
+          }
+        },
+        "User": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "example": "theuser@gmail.com"
+            },
+            "username": {
+              "type": "string"
+            }
+          },
+          "json": {
+            "name": "User"
+          }
+        },
+        "subscribeUser": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            }
+          },
+          "json": {
+            "name": "userLogin"
+          }
+        },
+        "userSignup": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "username": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          },
+          "json": {
+            "name": "userSignup"
+          }
+        },
+        "userLogin": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          },
+          "json": {
+            "name": "userLogin"
+          }
+        },
+        "adminUpdates": {
+          "type": "object",
+          "properties": {
+            "firstname": {
+              "type": "string"
+            },
+            "lastname": {
+              "type": "string"
+            }
+          },
+          "json": {
+            "name": "userLogin"
+          }
+        },
+        "accessSignToken": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "storyRequest": {
+          "type": "object",
+          "properties": {
+            "decoded": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "numberOfPages": {
+              "type": "integer"
+            },
+            "scenes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "caption": {
+                    "type": "string"
+                  },
+                  "imageUrl": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "json": {
+            "name": "storyRequest"
+          }
+        },
+        "apiImage": {
+          "type": "object",
+          "properties": {
+            "prompt": {
+              "type": "string"
+            }
+          }
+        },
+        "forgotPassword": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "resetPassword": {
+          "type": "object",
+          "properties": {
+            "password1": {
+              "type": "string"
+            },
+            "password2": {
+              "type": "string"
+            }
+          }
+        },
+        "changePassword": {
+          "type": "object",
+          "properties": {
+            "newPassword": {
+              "type": "string"
+            },
+            "confirmNewPassword": {
+              "type": "string"
+            }
+          }
+        },
+        "ApiResponse": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            },
+            "message": {
+              "type": "message"
+            }
+          },
+          "json": {
+            "name": "##default"
+          }
+        }
+      },
+      "securitySchemes": {
+        "bearerAuth": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT"
+        },
+        "api_key": {
+          "type": "apiKey",
+          "name": "api_key",
+          "in": "header"
+        }
+      }
+    }
+  }
+  
