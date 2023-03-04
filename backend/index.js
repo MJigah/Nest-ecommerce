@@ -5,8 +5,8 @@ const colors = require('colors');
 const path = require('path');
 const { errorHandler } = require('./src/middleware/error.middleware');
 const bodyParser = require('body-parser');
-const connectDb = require('./src/config/db/index');
-connectDb();
+// const connectDb = require('./src/config/db/index');
+// connectDb();
 const userRoutes = require('./src/routes/user.routes')
 const app = express();
 const swaggerDocs = require('./src/config/utils/swagger/swagger')
@@ -15,7 +15,8 @@ const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(bodyParser({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 app.use(morgan('dev'));
 swaggerDocs(app);
 

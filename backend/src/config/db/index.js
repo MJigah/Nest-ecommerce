@@ -1,13 +1,23 @@
-const mongoose = require('mongoose');
+const dotenv = require('dotenv')
 
-const connectDb = async () => {
-    try {
-        const conn = await mongoose.connect('mongodb://localhost/nest-app');
-        console.log(`Database Connected: ${conn.connection.host}`.cyan.underline)
-    } catch (error) {
-        console.log(error)
-        process.exit(1);
-    }
+const {
+    API_KEY
+AUTH_DOMAIN
+PROJECT_ID
+STORAGE_BUCKET
+MESSAGING_SENDER_ID
+APP_ID
+} = process.env;
+
+const firebaseConfig = {
+   apiKey: API_KEY,  
+    authDomain: AUTH_DOMAIN,
+    projectId: PROJECT_ID,
+    storageBucket: STORAGE_BUCKET,
+    messagingSenderId: MESSAGING_SENDER_ID,
+    appId: APP_ID
+};
+
+module.exprts = {
+    firebaseConfig,
 }
-
-module.exports = connectDb;
