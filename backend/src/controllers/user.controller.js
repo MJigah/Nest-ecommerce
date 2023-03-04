@@ -1,26 +1,36 @@
 const asyncHandler = require('express-async-handler');
+const firebase = require('../config/db/index')
 const { User } = require('../models/user.model');
 const bcrypt = require('bcryptjs');
 const { generateToken } = require('../middleware/token.middleware');
+const firestore = firebase.firestore()
 
 
 const userSignup = asyncHandler(async (req, res) => {
     try {
         const { email, username, password } = req.body;
 
-        const checkUser = await User.findOne({email});
-        if(checkUser){
-            res.status(400).send({message: 'User already exists!'})
-        }
+        // const checkUser = await User.findOne({email});
+        // if(checkUser){
+        //     res.status(400).send({message: 'User already exists!'})
+        // }
 
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
 
-        const user = await User.create({
+        // const user = await User.create({
+        //     email,
+        //     username,
+        //     password: hashedPassword
+        // });
+        const user = await firestore.collection('users').docs.set({
             email,
             username,
-            password: hashedPassword
-        });
+            hashedPassword,
+            createdAt: Date.now(),
+            updatedAt: Date.now()
+        })
+
         if(!user){
             res.status(400).send({message: 'Invalid SignUp Details!'})
         }
