@@ -1,23 +1,6 @@
-const dotenv = require('dotenv')
+const firebase = require('firebase');
+const config = require('../../utils/firebase/index');
 
-const {
-    API_KEY
-AUTH_DOMAIN
-PROJECT_ID
-STORAGE_BUCKET
-MESSAGING_SENDER_ID
-APP_ID
-} = process.env;
+const db = firebase.intializeApp(config.firebaseConfig);
 
-const firebaseConfig = {
-   apiKey: API_KEY,  
-    authDomain: AUTH_DOMAIN,
-    projectId: PROJECT_ID,
-    storageBucket: STORAGE_BUCKET,
-    messagingSenderId: MESSAGING_SENDER_ID,
-    appId: APP_ID
-};
-
-module.exprts = {
-    firebaseConfig,
-}
+module.exports = db;
