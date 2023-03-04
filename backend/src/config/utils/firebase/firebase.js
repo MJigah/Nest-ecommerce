@@ -1,4 +1,5 @@
-const dotenv = require("dotenv");
+const dotenv = require('dotenv');
+dotenv.config()
 
 const {
   API_KEY,
@@ -18,6 +19,7 @@ const firebaseConfig = {
   appId: APP_ID,
 };
 
-module.exprts = {
-  firebaseConfig,
+
+module.exports = {
+    firebaseConfig
 };

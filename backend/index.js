@@ -5,8 +5,6 @@ const colors = require('colors');
 const path = require('path');
 const { errorHandler } = require('./src/middleware/error.middleware');
 const bodyParser = require('body-parser');
-// const connectDb = require('./src/config/db/index');
-// connectDb();
 const userRoutes = require('./src/routes/user.routes')
 const app = express();
 const swaggerDocs = require('./src/config/utils/swagger/swagger')

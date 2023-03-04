@@ -3,7 +3,9 @@ const firebase = require('../config/db/index')
 const { User } = require('../models/user.model');
 const bcrypt = require('bcryptjs');
 const { generateToken } = require('../middleware/token.middleware');
-const firestore = firebase.firestore()
+const firestore = require('firebase/firestore');
+const { addDoc, collection } = require('firebase/firestore');
+const {db} = require('../config/db/index')
 
 
 const userSignup = asyncHandler(async (req, res) => {
@@ -23,13 +25,15 @@ const userSignup = asyncHandler(async (req, res) => {
         //     username,
         //     password: hashedPassword
         // });
-        const user = await firestore.collection('users').docs.set({
+
+        const userData = {
             email,
             username,
             hashedPassword,
             createdAt: Date.now(),
             updatedAt: Date.now()
-        })
+        }
+        const user = await addDoc(collection(db, 'User'), userData);
 
         if(!user){
             res.status(400).send({message: 'Invalid SignUp Details!'})

@@ -4,6 +4,6 @@ class User{
         this.username = username;
         this.password = password;
         this.createdAt = createdAt;
-        this.updatedAt = updatedAtl
+        this.updatedAt = updatedAt;
     }
 }
