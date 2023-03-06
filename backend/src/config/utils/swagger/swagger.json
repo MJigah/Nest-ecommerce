@@ -705,10 +705,6 @@
             "contact": {
               "type": "string",
               "example": "+234 000 000 0000"
-            },
-            "category": {
-              "type": "string",
-              "example": "Eatery"
             }
           },
           "json": {
