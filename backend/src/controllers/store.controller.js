@@ -1,17 +1,28 @@
 const asyncHandler = require("express-async-handler");
 const { collection, serverTimestamp, addDoc } = require("firebase/firestore");
 const { db } = require("../config/db");
+const { checkForStore } = require("../helpers/store.helpers");
 const { Store, storeConverter } = require("../models/store.models");
 
 const createNewStore = asyncHandler(async (req, res) => {
   try {
     const { name, address, isVerified, email, contact, category } = req.body;
+
+    //Check for Existing Store
+    const checkStore = await checkForStore(email);
+    if(checkStore){
+        return res.status(400).send({message: 'Store already exists!'})
+    }
+
+    //Query to create new firebase record
     const ref = collection(db, "Store").withConverter(storeConverter);
     const store = await addDoc(
       ref,
       new Store(name, address, isVerified, email, contact, category),
       { timestamp: serverTimestamp() }
     );
+
+    //Check if Store is created sucessfully
     if (!store) {
       return res.status(400).send({ message: "Invalid Details!" });
     }
