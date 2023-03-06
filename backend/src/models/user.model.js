@@ -7,3 +7,24 @@ class User{
         this.updatedAt = updatedAt;
     }
 }
+
+const userConverter = {
+    toFirestore: (user) => {
+        return {
+            email: user.email,
+            username: user.username,
+            password: user.password,
+            createdAt: user.createdAt,
+            updatedAt: user.updatedAt
+            };
+    },
+    fromFirestore: (snapshot, options) => {
+        const data = snapshot.data(options);
+        return new City(data.email, data.username, data.password, data.createdAt, data.updatedAt);
+    }
+};
+
+module.exports = {
+    User,
+    userConverter,
+};
