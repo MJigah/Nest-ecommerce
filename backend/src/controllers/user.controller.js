@@ -4,7 +4,8 @@ const bcrypt = require("bcryptjs");
 const { generateToken } = require("../middleware/token.middleware");
 const {doc, setDoc, addDoc, collection } = require("firebase/firestore");
 const { db } = require("../config/db/index");
-const { checkForUser } = require("../middleware/user.middleware");
+const { checkForUser } = require("../helpers/user.helpers");
+const { currentDate } = require("../helpers/help.helpers");
 
 const userSignup = asyncHandler(async (req, res) => {
   try {
@@ -21,22 +22,9 @@ const userSignup = asyncHandler(async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, salt);
 
     //Get Current Date
-    var currentdate = new Date();
-    var datetime =
-
-      currentdate.getDate() +
-      "/" +
-      (currentdate.getMonth() + 1) +
-      "/" +
-      currentdate.getFullYear() +
-      " @ " +
-      currentdate.getHours() +
-      ":" +
-      currentdate.getMinutes() +
-      ":" +
-      currentdate.getSeconds();
-      createdAt = datetime;
-      updatedAt = datetime;
+    const datetime = currentDate();
+    createdAt = datetime;
+    updatedAt = datetime;
 
     //Query to create new Friebase record
     const ref = collection(db, 'User').withConverter(userConverter);

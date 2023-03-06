@@ -1,4 +1,3 @@
-const asyncHandler = require("express-async-handler");
 const { collection, query, where, getDocs, limit } = require("firebase/firestore")
 const { db } = require("../config/db")
 
