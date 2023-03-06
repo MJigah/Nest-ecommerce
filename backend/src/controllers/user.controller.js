@@ -2,7 +2,7 @@ const asyncHandler = require("express-async-handler");
 const { User, userConverter } = require("../models/user.model");
 const bcrypt = require("bcryptjs");
 const { generateToken } = require("../middleware/token.middleware");
-const {doc, setDoc, addDoc, collection } = require("firebase/firestore");
+const {doc, setDoc, addDoc, collection, serverTimestamp } = require("firebase/firestore");
 const { db } = require("../config/db/index");
 const { checkForUser } = require("../helpers/user.helpers");
 const { currentDate } = require("../helpers/help.helpers");
@@ -28,7 +28,7 @@ const userSignup = asyncHandler(async (req, res) => {
 
     //Query to create new Friebase record
     const ref = collection(db, 'User').withConverter(userConverter);
-    const user = await addDoc(ref, new User(email, username, hashedPassword, createdAt, updatedAt));
+    const user = await addDoc(ref, new User(email, username, hashedPassword, createdAt, updatedAt), {timestamp: serverTimestamp()});
 
     if (!user) {
       return res.status(400).send({ message: "Invalid SignUp Details!" });

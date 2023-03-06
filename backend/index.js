@@ -6,6 +6,7 @@ const path = require('path');
 const { errorHandler } = require('./src/middleware/error.middleware');
 const bodyParser = require('body-parser');
 const userRoutes = require('./src/routes/user.routes')
+const storeRoutes = require('./src/routes/store.routes')
 const app = express();
 const swaggerDocs = require('./src/config/utils/swagger/swagger')
 
@@ -30,6 +31,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.use('/api/users', userRoutes);
+app.use('/api/store', storeRoutes);
 
 app.use(errorHandler);
 

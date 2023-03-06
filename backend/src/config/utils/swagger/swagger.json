@@ -13,8 +13,8 @@
     "schemes": ["http", "https"],
     "tags": [
       {
-        "name": "Story",
-        "description": "Everything about your Story Books"
+        "name": "Store",
+        "description": "Operations for Vendor/Store"
       },
       {
         "name": "User",
@@ -26,251 +26,44 @@
       }
     ],
     "paths": {
-      "/story": {
-        "get": {
-          "tags": ["Story"],
-          "summary": "Find All Stories in database",
-          "description": "Find All Stories in database.",
-          "operationId": "getAllStories",
-          "parameters": [],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Story"
-                  }
-                },
-                "application/xml": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Story"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "/story/{email}": {
-        "get": {
-          "tags": ["Story"],
-          "summary": "Find Story by Email",
-          "description": "Find Story by Email.",
-          "operationId": "getStoryByEmail",
-          "parameters": [
-            {
-              "name": "email",
-              "in": "path",
-              "description": "email of User",
-              "required": true,
-              "schema": {
-                "type": "string"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Story"
-                  }
-                },
-                "application/xml": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Story"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "/story/{id}": {
-        "get": {
-          "tags": ["Story"],
-          "summary": "Find Story by Id",
-          "description": "Find Story by Id.",
-          "operationId": "getStoryById",
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "description": "id of Story",
-              "required": true,
-              "schema": {
-                "type": "string"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Story"
-                  }
-                },
-                "application/xml": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Story"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "delete": {
-          "tags": ["Story"],
-          "summary": "Delete story",
-          "description": "Delete story Details.",
-          "operationId": "seleteStory",
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "description": "id of Story",
-              "required": true,
-              "schema": {
-                "type": "string"
-              }
-            }
-          ],
-          "responses": {
-            "default": {
-              "description": "successful operation"
-            }
-          }
-        }
-      },
-      "/story/{id}/archive": {
+      "/api/store/create": {
         "post": {
-          "tags": ["Story"],
-          "summary": "Archive Story by Id",
-          "description": "Archive Story by Id.",
-          "operationId": "archiveStoryById",
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "description": "id of Story",
-              "required": true,
-              "schema": {
-                "type": "string"
-              }
-            }
-          ],
-          "security": [
-            {
-              "bearerAuth": []
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Story"
-                  }
-                },
-                "application/xml": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Story"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "/story/{id}/unarchive": {
-        "post": {
-          "tags": ["Story"],
-          "summary": "Unarchive Story by Id",
-          "description": "Unarchive Story by Id.",
-          "operationId": "unarchiveStoryById",
-          "parameters": [
-            {
-              "name": "id",
-              "in": "path",
-              "description": "id of Story",
-              "required": true,
-              "schema": {
-                "type": "string"
-              }
-            }
-          ],
-          "security": [
-            {
-              "bearerAuth": []
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Story"
-                  }
-                },
-                "application/xml": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Story"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "/story/post_story": {
-        "post": {
-          "tags": ["Story"],
-          "summary": "Create story",
-          "description": "Create a new Story.",
-          "operationId": "createStory",
+          "tags": ["Store"],
+          "summary": "Create a new Store",
+          "description": "Create a new Store",
+          "operationId": "creatStore",
           "requestBody": {
-            "description": "Created sttory object",
+            "description": "Created Store object",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/storyRequest"
+                  "$ref": "#/components/schemas/createStore"
                 }
               },
               "application/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/storyRequest"
+                  "$ref": "#/components/schemas/createStore"
                 }
               },
               "application/x-www-form-urlencoded": {
                 "schema": {
-                  "$ref": "#/components/schemas/storyRequest"
+                  "$ref": "#/components/schemas/createStore"
                 }
               }
             }
           },
-          "security": [
-            {
-              "bearerAuth": []
-            }
-          ],
           "responses": {
             "default": {
               "description": "successful operation",
               "content": {
                 "application/json": {
                   "schema": {
-                    "$ref": "#/components/schemas/Story"
+                    "$ref": "#/components/schemas/createStore"
                   }
                 },
                 "application/xml": {
                   "schema": {
-                    "$ref": "#/components/schemas/Story"
+                    "$ref": "#/components/schemas/createStore"
                   }
                 }
               }
@@ -888,6 +681,38 @@
           },
           "json": {
             "name": "Story"
+          }
+        },
+        "createStore": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "example": "McCheese"
+            },
+            "address": {
+              "type": "string",
+              "example": "Independence Way"
+            },
+            "isVerified": {
+              "type": "boolean",
+              "example": false
+            },
+            "email": {
+              "type": "string",
+              "example": "mccheese@gmail.com"
+            },
+            "contact": {
+              "type": "string",
+              "example": "+234 000 000 0000"
+            },
+            "category": {
+              "type": "string",
+              "example": "Eatery"
+            }
+          },
+          "json": {
+            "name": "Store"
           }
         },
         "User": {
