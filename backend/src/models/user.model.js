@@ -20,7 +20,7 @@ const userConverter = {
     },
     fromFirestore: (snapshot, options) => {
         const data = snapshot.data(options);
-        return new City(data.email, data.username, data.password, data.createdAt, data.updatedAt);
+        return new User(data.email, data.username, data.password, data.createdAt, data.updatedAt);
     }
 };
 
