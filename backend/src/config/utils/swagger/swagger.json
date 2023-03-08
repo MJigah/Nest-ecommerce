@@ -21,8 +21,8 @@
         "description": "Operations about user"
       },
       {
-        "name": "Admin",
-        "description": "Operations for Admin"
+        "name": "Product",
+        "description": "Operations for Products"
       }
     ],
     "paths": {
@@ -64,6 +64,51 @@
                 "application/xml": {
                   "schema": {
                     "$ref": "#/components/schemas/createStore"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/product/create": {
+        "post": {
+          "tags": ["Product"],
+          "summary": "Create a new Product",
+          "description": "Create a new Product",
+          "operationId": "creatProduct",
+          "requestBody": {
+            "description": "Created Product object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/createProduct"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/createProduct"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/createProduct"
+                }
+              }
+            }
+          },
+          "responses": {
+            "default": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/createProduct"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/createProduct"
                   }
                 }
               }
@@ -708,7 +753,7 @@
             }
           },
           "json": {
-            "name": "Store"
+            "name": "createStore"
           }
         },
         "User": {
@@ -724,6 +769,50 @@
           },
           "json": {
             "name": "User"
+          }
+        },
+        "createProduct": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "example": "Mac & Cheese"
+            },
+            "store": {
+              "type": "string",
+              "example": "Mccheese"
+            },
+            "price": {
+              "type": "string",
+              "example": "14.50"
+            },
+            "description": {
+              "type": "string",
+              "example": "Mac & Cheese"
+            },
+            "ratings": {
+              "type": "string",
+              "example": "3.5"
+            },
+            "reviews": {
+              "type": "string",
+              "example": "Really Delicious!"
+            },
+            "images": {
+              "type": "string",
+              "example": "mccheese@gmail.com"
+            },
+            "category": {
+              "type": "string",
+              "example": "Food & Drinks"
+            },
+            "countInStock": {
+              "type": "integer",
+              "example": "4"
+            }
+          },
+          "json": {
+            "name": "createProduct"
           }
         },
         "subscribeUser": {

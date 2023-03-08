@@ -2,7 +2,7 @@ const asyncHandler = require('express-async-handler');
 const { collection, addDoc, serverTimestamp } = require('firebase/firestore');
 const { db } = require('../config/db');
 const { checkForProduct } = require('../helpers/product.helpers');
-const { productConverter } = require('../models/product.model');
+const { productConverter, Product } = require('../models/product.model');
 
 const addProduct = asyncHandler(async(req, res) => {
     try {
