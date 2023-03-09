@@ -12,7 +12,7 @@ const addProduct = asyncHandler(async(req, res) => {
             price,
             description,
             ratings,
-            reviews,
+            reviews, 
             images,
             category,
             countInStock

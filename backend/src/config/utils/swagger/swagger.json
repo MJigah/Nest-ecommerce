@@ -807,7 +807,7 @@
               "example": "Food & Drinks"
             },
             "countInStock": {
-              "type": "integer",
+              "type": "string",
               "example": "4"
             }
           },
