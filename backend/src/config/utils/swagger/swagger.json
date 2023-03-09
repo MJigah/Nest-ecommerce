@@ -23,6 +23,10 @@
       {
         "name": "Product",
         "description": "Operations for Products"
+      },
+      {
+        "name": "Order",
+        "description": "Operations for Orders"
       }
     ],
     "paths": {
@@ -93,6 +97,51 @@
               "application/x-www-form-urlencoded": {
                 "schema": {
                   "$ref": "#/components/schemas/createProduct"
+                }
+              }
+            }
+          },
+          "responses": {
+            "default": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/createProduct"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/createProduct"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/order/create": {
+        "post": {
+          "tags": ["Order"],
+          "summary": "Create a new Order",
+          "description": "Create a new Order",
+          "operationId": "creatOrder",
+          "requestBody": {
+            "description": "Created Order object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/createOrder"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/createOrder"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/createOrder"
                 }
               }
             }
@@ -824,6 +873,58 @@
           },
           "json": {
             "name": "userLogin"
+          }
+        },
+        "createOrder": {
+          "type": "object",
+          "properties": {
+            "orderItems": {
+              "type": "string",
+              "example": "Foods & Supplements"
+            },
+            "shippingAddress": {
+              "type": "string",
+              "example": "Mc Dan Close"
+            },
+            "paymentMethod": {
+              "type": "string",
+              "example": "visa card"
+            },
+            "paymentResult": {
+              "type": "string",
+              "example": "Unsuccessful"
+            },
+            "shippingPrice": {
+              "type": "string",
+              "example": "30.50"
+            },
+            "taxPrice": {
+              "type": "string",
+              "example": "0.0"
+            },
+            "user": {
+              "type": "string",
+              "example": "user"
+            },
+            "isPaid": {
+              "type": "string",
+              "example": "isPaid"
+            },
+            "paidAt": {
+              "type": "boolean",
+              "example": false
+            },
+            "isDelivered": {
+              "type": "string",
+              "example": "isDelivered"
+            },
+            "deliveredAt": {
+              "type": "boolean",
+              "example": false
+            }
+          },
+          "json": {
+            "name": "createOrder"
           }
         },
         "userSignup": {
