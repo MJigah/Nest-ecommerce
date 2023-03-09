@@ -22,3 +22,9 @@ module.exports = {
     Category,
     categoryconverter,
 }
+
+// Category db
+// ==> Main Category
+//     ==> Sub Category
+//         ==> Sub sub Category
+//             ==> tags
