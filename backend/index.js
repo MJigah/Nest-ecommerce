@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const userRoutes = require('./src/routes/user.routes')
 const storeRoutes = require('./src/routes/store.routes')
 const productRoutes = require('./src/routes/product.routes');
+const orderRoutes = require('./src/routes/order.routes');
 const app = express();
 const swaggerDocs = require('./src/config/utils/swagger/swagger')
 
@@ -34,6 +35,7 @@ if (process.env.NODE_ENV === "production") {
 app.use('/api/users', userRoutes);
 app.use('/api/store', storeRoutes);
 app.use('/api/product', productRoutes);
+app.use('/api/order', orderRoutes);
 
 app.use(errorHandler);
 
