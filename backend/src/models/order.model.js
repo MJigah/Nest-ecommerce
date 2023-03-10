@@ -1,7 +1,5 @@
 class Order {
   constructor(
-    orderItems,
-    shippingAddress,
     paymentMethod,
     paymentResult,
     shippingPrice,
@@ -12,8 +10,6 @@ class Order {
     isDelivered,
     deliveredAt
   ) {
-    this.orderItems = orderItems;
-    this.shippingAddress = shippingAddress;
     this.paymentMethod = paymentMethod;
     this.paymentResult = paymentResult;
     this.shippingPrice = shippingPrice;
@@ -23,7 +19,30 @@ class Order {
     this.paidAt = paidAt;
     this.isDelivered = isDelivered;
     this.deliveredAt = deliveredAt;
+  };
+
+  addOrderItems(data) {
+    const { product, quantity, name, totalPrice } = data;
+    let newItems = {
+      product,
+      quantity,
+      name,
+      totalPrice,
+    };
+    this.orderItems = [newItems];
   }
+
+  addShippingAddress(data) {
+    const { fullName, address, city, postalCode, country } = data;
+    let newShippingAddress = {
+      fullName,
+      address,
+      city,
+      postalCode,
+      country,
+    };
+    this.shippingAddress = newShippingAddress;
+  };
 }
 
 const orderConverter = {
@@ -61,9 +80,9 @@ const orderConverter = {
 };
 
 module.exports = {
-    Order,
-    orderConverter,
-}
+  Order,
+  orderConverter,
+};
 
 // orderItems: [
 //     {

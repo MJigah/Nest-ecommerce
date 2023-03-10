@@ -878,14 +878,6 @@
         "createOrder": {
           "type": "object",
           "properties": {
-            "orderItems": {
-              "type": "string",
-              "example": "Foods & Supplements"
-            },
-            "shippingAddress": {
-              "type": "string",
-              "example": "Mc Dan Close"
-            },
             "paymentMethod": {
               "type": "string",
               "example": "visa card"
