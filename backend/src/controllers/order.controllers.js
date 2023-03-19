@@ -28,7 +28,7 @@ const createNewOrder = asyncHandler(async (req, res) => {
     const newShippingAddress = {
       fullName: "John Doe",
       address: "Ethopia Crescent",
-      city: "Ethereum",
+      city: "Ethereum City",
       postalCode: "007",
       country: "Ethopia",
     };
