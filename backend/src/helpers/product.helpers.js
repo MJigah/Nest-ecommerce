@@ -1,4 +1,4 @@
-const { getDocs, collection, where, limit, query } = require("firebase/firestore");
+const { getDocs, collection, where, limit, query, getDoc, doc } = require("firebase/firestore");
 const { db } = require("../config/db");
 
 const checkForProduct = (async(name) => {
@@ -14,6 +14,25 @@ const checkForProduct = (async(name) => {
     return checkProduct;
 })
 
+//Check for Product using Id
+const checkProductWithId = async(id) => {
+    try {
+        let checkProduct;
+        const ref = doc(db, 'Product', id);
+        const docSnap = await getDoc(ref);
+        if(docSnap.exists()){
+            checkProduct = true;
+        } else {
+            checkProduct = false;
+        };
+        return checkProduct;
+    } catch (error) {
+        console.log(error);
+        return;
+    }
+}
+
 module.exports = {
     checkForProduct,
+    checkProductWithId,
 }
