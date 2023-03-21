@@ -75,6 +75,71 @@
           }
         }
       },
+      "/api/store/{storeId}/{productId}": {
+        "post": {
+          "tags": ["Store"],
+          "summary": "Add Product to Store",
+          "description": "Add Product to Store",
+          "operationId": "addStoreProduct",
+          "parameters": [
+            {
+              "name": "storeId",
+              "in": "path",
+              "description": "id of Store",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "productId",
+              "in": "path",
+              "description": "id of Product",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "requestBody": {
+            "description": "Created Store Product object",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/createStore"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/createStore"
+                }
+              },
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/createStore"
+                }
+              }
+            }
+          },
+          "responses": {
+            "default": {
+              "description": "successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/createStore"
+                  }
+                },
+                "application/xml": {
+                  "schema": {
+                    "$ref": "#/components/schemas/createStore"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "/api/product/create": {
         "post": {
           "tags": ["Product"],
