@@ -1,8 +1,8 @@
 {
     "openapi": "3.0.3",
     "info": {
-      "title": "Swagger API Docs for Kids Story Illustrator",
-      "description": "This is a sample Story illustrator Server based on the OpenAPI 3.0 specification.",
+      "title": "Swagger API Docs for Doormut Application",
+      "description": "Doormut API Documentation using OpenAPI 3.0 specification.",
       "version": "1.0.11"
     },
     "servers": [
